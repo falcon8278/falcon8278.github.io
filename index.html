@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>写真图片-风格图鉴与拍摄指南</title>
+<meta name="description" content="写真图片风格图鉴与拍摄指南：拆解日系、韩系、胶片、暗调等写真风格的用光与构图，收录近期写真图片更新、选片方法、摄影师选择与常见问题，帮助预约前把风格说清楚。">
+<meta name="keywords" content="写真图片">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f3a4a'/%3E%3Ccircle cx='32' cy='27' r='10' fill='%23e8b4a0'/%3E%3Cpath d='M14 54c3-12 9-17 18-17s15 5 18 17' fill='%23e8b4a0'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#232a33;
+  --ink-soft:#4a5460;
+  --muted:#75808d;
+  --paper:#fbf8f4;
+  --card:#ffffff;
+  --line:#e6ded4;
+  --line-strong:#d3c8bb;
+  --brand:#2f3a4a;
+  --brand-2:#5c6b7d;
+  --accent:#c2735a;
+  --accent-soft:#f6e6df;
+  --warm:#e8b4a0;
+  --ok:#4f7a63;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 2px 10px rgba(47,58,74,.07);
+  --shadow-h:0 6px 18px rgba(47,58,74,.12);
+  --sp-1:8px; --sp-2:14px; --sp-3:20px; --sp-4:28px; --sp-5:40px; --sp-6:56px;
+  --fs-h1:clamp(1.9rem,4.4vw,3rem);
+  --fs-h2:clamp(1.3rem,2.4vw,1.6rem);
+  --fs-h3:1.06rem;
+  --ann-h:38px;
+  --head-h:64px;
+  --sticky-h:calc(var(--ann-h) + var(--head-h));
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);line-height:1.78;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{color:var(--accent)}
+h1,h2,h3,h4{margin:0;line-height:1.35;color:var(--brand)}
+p{margin:0 0 var(--sp-2)}
+ul,ol{margin:0;padding-left:1.15em}
+li{margin-bottom:6px}
+[ id ]{scroll-margin-top:calc(var(--sticky-h) + 14px)}
+.wrap{width:min(1180px,94vw);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* 公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;background:var(--brand);color:#e9edf2;
+  font-size:.8rem;letter-spacing:.01em;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;min-height:var(--ann-h);flex-wrap:wrap}
+.announce b{color:var(--warm);font-weight:600}
+.announce .tag{
+  border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:0 8px;font-size:.72rem;
+  flex:none;line-height:18px;color:#fff
+}
+.announce a{color:#fff;border-bottom:1px solid rgba(255,255,255,.35)}
+.announce a:hover{color:var(--warm)}
+
+/* 页头 */
+.site-head{
+  position:sticky;top:var(--ann-h);z-index:55;background:rgba(251,248,244,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+}
+.site-head .wrap{display:flex;align-items:center;gap:var(--sp-3);min-height:var(--head-h)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.12rem;color:var(--brand);flex:none}
+.brand:hover{color:var(--brand)}
+.brand svg{width:30px;height:30px;flex:none}
+.nav-main{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.nav-main a{
+  padding:6px 11px;border-radius:999px;font-size:.9rem;color:var(--ink-soft);white-space:nowrap;
+}
+.nav-main a:hover,.nav-main a.active{background:var(--accent-soft);color:var(--accent)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{position:relative}
+.search-box input{
+  width:168px;padding:7px 10px 7px 30px;border:1px solid var(--line-strong);border-radius:999px;
+  background:#fff;font:inherit;font-size:.85rem;color:var(--ink);
+}
+.search-box input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(194,115,90,.16)}
+.search-box .ico{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:13px;height:13px;opacity:.5}
+.search-out{
+  position:absolute;top:calc(100% + 8px);right:0;width:264px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);box-shadow:var(--shadow-h);padding:8px;font-size:.85rem;display:none;z-index:70;
+  max-height:300px;overflow:auto;
+}
+.search-out.show{display:block}
+.search-out a{display:block;padding:6px 8px;border-radius:6px;color:var(--ink)}
+.search-out a:hover{background:var(--accent-soft);color:var(--accent)}
+.search-out .none{color:var(--muted);padding:6px 8px}
+.menu-btn{
+  display:none;border:1px solid var(--line-strong);background:#fff;border-radius:999px;
+  width:38px;height:34px;align-items:center;justify-content:center;cursor:pointer;padding:0;
+}
+.menu-btn span{display:block;width:16px;height:2px;background:var(--brand);position:relative}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:16px;height:2px;background:var(--brand)}
+.menu-btn span::before{top:-5px}.menu-btn span::after{top:5px}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-inner{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:var(--sp-5);align-items:center;padding:var(--sp-6) 0;
+}
+.hero-copy h1{font-size:var(--fs-h1);letter-spacing:.01em;margin-bottom:var(--sp-3)}
+.hero-copy .lead{color:var(--ink-soft);font-size:1.02rem;max-width:34em}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.16em;
+  color:var(--accent);font-weight:600;text-transform:uppercase;margin-bottom:var(--sp-2);
+}
+.hero-eyebrow::before{content:"";width:22px;height:1px;background:var(--accent)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--sp-3)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;
+  font-size:.92rem;font-weight:600;border:1px solid transparent;cursor:pointer;
+  transition:transform .18s,box-shadow .18s,background .18s;font-family:inherit;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:#26303d;color:#fff;transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-ghost{background:#fff;color:var(--brand);border-color:var(--line-strong)}
+.btn-ghost:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+.hero-meta{display:flex;gap:var(--sp-4);margin-top:var(--sp-4);flex-wrap:wrap}
+.hero-meta div{font-size:.82rem;color:var(--muted)}
+.hero-meta b{display:block;font-size:1.4rem;color:var(--brand);line-height:1.2;font-weight:700}
+.hero-art{position:relative;aspect-ratio:1/.92;display:grid;place-items:center}
+.hero-art svg{width:100%;height:100%}
+.hero-art .frame-cap{
+  position:absolute;bottom:6px;right:6px;font-size:.72rem;color:var(--muted);
+  background:rgba(251,248,244,.85);padding:2px 8px;border-radius:999px;border:1px solid var(--line)
+}
+
+/* 版面 */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:var(--sp-5);
+  padding:var(--sp-5) 0 var(--sp-6);align-items:start;
+}
+.sidebar{position:sticky;top:calc(var(--sticky-h) + 18px);display:flex;flex-direction:column;gap:var(--sp-3)}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3);box-shadow:var(--shadow)}
+.side-card h3{font-size:.95rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.side-card h3::before{content:"";width:3px;height:15px;background:var(--accent);border-radius:2px}
+.side-nav a{
+  display:block;padding:5px 10px;border-left:2px solid transparent;font-size:.88rem;
+  color:var(--ink-soft);border-radius:0 6px 6px 0;
+}
+.side-nav a:hover{color:var(--accent);background:var(--accent-soft)}
+.side-nav a.on{border-left-color:var(--accent);color:var(--accent);background:var(--accent-soft);font-weight:600}
+.side-stat li{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:8px;color:var(--ink-soft)}
+.side-stat b{color:var(--brand)}
+
+/* 板块通用 */
+.section{margin-bottom:var(--sp-6)}
+.sec-head{display:flex;align-items:baseline;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-3);padding-bottom:10px;border-bottom:1px solid var(--line)}
+.sec-head h2{font-size:var(--fs-h2)}
+.sec-head .sec-note{font-size:.82rem;color:var(--muted);margin-left:auto}
+.sec-head .kicker{font-size:.74rem;letter-spacing:.14em;color:var(--accent);font-weight:600}
+
+/* 领域概览：对照面板 */
+.compare{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-2)}
+.compare .panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3);
+}
+.compare .panel h3{font-size:1rem;margin-bottom:6px}
+.compare .panel .lbl{font-size:.74rem;color:var(--accent);font-weight:600;letter-spacing:.06em}
+.compare dl{margin:10px 0 0;font-size:.85rem}
+.compare dt{color:var(--muted);font-size:.78rem;margin-top:8px}
+.compare dd{margin:0;color:var(--ink-soft)}
+
+/* 精选推荐：网格卡片 */
+.grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+.pick-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-h)}
+.pick-card img{width:100%;height:150px;object-fit:cover}
+.pick-card .body{padding:var(--sp-2) var(--sp-3) var(--sp-3);display:flex;flex-direction:column;flex:1}
+.pick-card .tagline{font-size:.72rem;color:var(--accent);font-weight:600;letter-spacing:.04em}
+.pick-card h3{font-size:1rem;margin:4px 0 6px}
+.pick-card p{font-size:.85rem;color:var(--ink-soft);margin:0 0 10px}
+.pick-card .meta{margin-top:auto;font-size:.75rem;color:var(--muted);display:flex;justify-content:space-between}
+
+/* 最新更新：紧凑列表 */
+.update-list{list-style:none;padding:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.update-list li{display:grid;grid-template-columns:78px 1fr auto;gap:var(--sp-2);align-items:baseline;padding:12px var(--sp-3);border-bottom:1px solid var(--line);margin:0;font-size:.9rem}
+.update-list li:last-child{border-bottom:none}
+.update-list time{font-size:.78rem;color:var(--accent);font-weight:600;white-space:nowrap}
+.update-list .what{color:var(--ink-soft)}
+.update-list .what b{color:var(--brand);font-weight:600}
+.update-list .who{font-size:.76rem;color:var(--muted);white-space:nowrap}
+
+/* 分类入口：标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{
+  display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line-strong);
+  border-radius:999px;padding:7px 15px;font-size:.88rem;color:var(--ink-soft);transition:all .16s;
+}
+.tag-index a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.tag-index a span{font-size:.72rem;color:var(--muted);background:var(--paper);border-radius:999px;padding:0 7px}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4) var(--sp-4) var(--sp-3);box-shadow:var(--shadow)}
+.deep .deep-lead{font-size:.98rem;color:var(--ink-soft);border-left:3px solid var(--warm);padding-left:var(--sp-2);margin-bottom:var(--sp-3)}
+.deep h3{font-size:var(--fs-h3);margin:var(--sp-3) 0 8px;display:flex;align-items:baseline;gap:8px}
+.deep h3 .no{font-size:.76rem;color:var(--accent);font-weight:700;letter-spacing:.08em}
+.deep p{font-size:.95rem;color:var(--ink-soft)}
+.deep .check{
+  background:var(--paper);border:1px dashed var(--line-strong);border-radius:var(--radius-s);
+  padding:10px var(--sp-2);font-size:.84rem;margin:10px 0;color:var(--ink-soft)
+}
+.deep .check b{color:var(--brand)}
+.deep .verdict{
+  background:var(--brand);color:#eef1f5;border-radius:var(--radius-s);padding:12px var(--sp-2);
+  font-size:.9rem;margin-top:var(--sp-2)
+}
+.deep .verdict b{color:var(--warm)}
+.deep blockquote{
+  margin:var(--sp-3) 0;padding:var(--sp-2) var(--sp-3);background:var(--accent-soft);
+  border-radius:var(--radius-s);font-size:.9rem;color:#6b4436;border-left:3px solid var(--accent)
+}
+.deep blockquote cite{display:block;font-size:.76rem;color:var(--accent);font-style:normal;margin-top:6px}
+
+/* 体验指南：编号步骤 */
+.steps{counter-reset:s;display:grid;gap:var(--sp-2)}
+.step{
+  counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:var(--sp-2);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3);
+}
+.step::before{
+  content:counter(s,decimal-leading-zero);font-weight:700;color:var(--accent);font-size:1.05rem;
+  border-right:1px solid var(--line);padding-right:var(--sp-2);
+}
+.step h3{font-size:.98rem;margin-bottom:4px}
+.step p{font-size:.87rem;margin:0;color:var(--ink-soft)}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:26px;margin:0;list-style:none}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line-strong)}
+.timeline li{position:relative;margin-bottom:var(--sp-2);font-size:.9rem;color:var(--ink-soft)}
+.timeline li::before{
+  content:"";position:absolute;left:-24px;top:7px;width:9px;height:9px;border-radius:50%;
+  background:var(--accent);border:2px solid var(--paper);box-shadow:0 0 0 2px var(--accent-soft)
+}
+.timeline time{color:var(--accent);font-weight:600;font-size:.8rem;margin-right:6px}
+.timeline b{color:var(--brand)}
+
+/* 用户评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-2)}
+.comment{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3)}
+.comment .who{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.comment .ava{width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700;font-size:.82rem;flex:none}
+.comment .who b{font-size:.87rem}
+.comment .who .rel{font-size:.74rem;color:var(--muted)}
+.comment p{font-size:.88rem;margin:0;color:var(--ink-soft)}
+.comment .ref{display:inline-block;margin-top:8px;font-size:.74rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 9px}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:13px var(--sp-3);font-weight:600;font-size:.94rem;color:var(--brand);
+  list-style:none;display:flex;align-items:center;gap:10px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"＋";color:var(--accent);font-weight:700;flex:none}
+.faq details[open] summary::before{content:"－"}
+.faq details[open] summary{border-bottom:1px solid var(--line);background:var(--paper)}
+.faq .ans{padding:var(--sp-2) var(--sp-3) var(--sp-3);font-size:.88rem;color:var(--ink-soft)}
+.faq .ans p{margin:0 0 8px}
+.faq .ans p:last-child{margin:0}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-2)}
+.news-item{display:flex;gap:var(--sp-2);background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-2) var(--sp-3);align-items:flex-start}
+.news-item time{font-size:.74rem;color:var(--accent);font-weight:600;white-space:nowrap;flex:none;padding-top:2px}
+.news-item h3{font-size:.9rem;margin-bottom:3px}
+.news-item p{font-size:.8rem;margin:0;color:var(--muted)}
+
+/* 相关推荐：引语卡 + 标签 */
+.quote-card{
+  background:var(--brand);color:#eef1f5;border-radius:var(--radius);padding:var(--sp-4);
+  position:relative;overflow:hidden
+}
+.quote-card::after{content:"“";position:absolute;right:18px;top:-18px;font-size:7rem;color:rgba(255,255,255,.08);line-height:1}
+.quote-card p{font-size:1rem;margin:0 0 10px;color:#e8edf3;position:relative}
+.quote-card cite{font-style:normal;font-size:.8rem;color:var(--warm)}
+
+/* 榜单 */
+.rank-list{counter-reset:r;list-style:none;padding:0;display:grid;gap:8px}
+.rank-list li{
+  counter-increment:r;display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);padding:10px var(--sp-2);
+  font-size:.88rem;margin:0
+}
+.rank-list li::before{content:counter(r);color:var(--accent);font-weight:700;font-size:.95rem}
+.rank-list .val{font-size:.76rem;color:var(--muted)}
+
+/* 页尾 */
+.site-foot{background:var(--brand);color:#c9d2dc;margin-top:var(--sp-5);padding:var(--sp-5) 0 var(--sp-3);font-size:.86rem}
+.foot-top{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:var(--sp-4);padding-bottom:var(--sp-4);border-bottom:1px solid rgba(255,255,255,.13)}
+.foot-brand .brand{color:#fff;font-size:1.15rem;margin-bottom:10px}
+.foot-brand .brand svg{width:28px;height:28px}
+.foot-brand p{color:#9fabb8;font-size:.83rem;margin:0 0 10px}
+.foot-col h4{color:#fff;font-size:.88rem;margin-bottom:10px;font-weight:600}
+.foot-col ul{list-style:none;padding:0}
+.foot-col li{margin-bottom:6px}
+.foot-col a{color:#a9b5c2;font-size:.83rem}
+.foot-col a:hover{color:var(--warm)}
+.foot-note{display:flex;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;padding-top:var(--sp-3);font-size:.78rem;color:#8b97a4}
+.foot-note a{color:#a9b5c2}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:1px solid rgba(255,255,255,.15);cursor:pointer;
+  display:grid;place-items:center;box-shadow:var(--shadow-h);opacity:0;visibility:hidden;
+  transition:opacity .2s,visibility .2s,transform .2s;z-index:50;font-size:1rem;
+}
+.to-top.show{opacity:1;visibility:visible}
+.to-top:hover{transform:translateY(-3px)}
+
+/* 平板 */
+@media (max-width:980px){
+  .hero-inner{grid-template-columns:1fr;gap:var(--sp-4);padding:var(--sp-5) 0}
+  .hero-art{max-width:460px;width:100%;margin-inline:auto}
+  .layout{grid-template-columns:1fr;gap:var(--sp-4)}
+  .sidebar{position:static;flex-direction:row;flex-wrap:wrap}
+  .side-card{flex:1 1 260px}
+  .grid-cards{grid-template-columns:repeat(2,1fr)}
+  .compare{grid-template-columns:1fr 1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .nav-main{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow-h);padding:var(--sp-2);gap:4px;z-index:56}
+  .nav-main.open{display:flex}
+  .nav-main a{padding:9px 14px}
+  .menu-btn{display:inline-flex}
+  .search-box input{width:130px}
+}
+@media (max-width:640px){
+  body{font-size:15px}
+  .grid-cards,.compare,.comments,.news-grid{grid-template-columns:1fr}
+  .hero-meta{gap:var(--sp-3)}
+  .hero-meta b{font-size:1.2rem}
+  .update-list li{grid-template-columns:66px 1fr;row-gap:2px}
+  .update-list .who{grid-column:2}
+  .nav-main{grid-template-columns:1fr}
+  .search-box input{width:104px;font-size:.8rem}
+  .brand span{font-size:1rem}
+  .foot-top{grid-template-columns:1fr}
+  .to-top{right:14px;bottom:14px;width:40px;height:40px}
+  .deep{padding:var(--sp-3)}
+  .step{grid-template-columns:34px 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .pick-card:hover,.tag-index a:hover,.btn:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" role="note">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <span>11月6日新增 <b>日系柔光室内</b> 样片 24 张；摄影棚档期表同步至 11月30日</span>
+    <a href="/#latest">查看更新明细</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="写真图片 首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#2f3a4a"/>
+        <circle cx="32" cy="26" r="10" fill="#e8b4a0"/>
+        <path d="M14 54c3-12 9-17 18-17s15 5 18 17" fill="#e8b4a0"/>
+        <rect x="10" y="10" width="8" height="2.4" rx="1.2" fill="#c2735a"/>
+        <rect x="46" y="10" width="8" height="2.4" rx="1.2" fill="#c2735a"/>
+      </svg>
+      <span>写真图片</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMain" aria-label="展开主导航">
+      <span></span>
+    </button>
+    <nav class="nav-main" id="navMain" aria-label="主题导航">
+      <a href="/#overview">风格概览</a>
+      <a href="/#picks">精选图集</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#cats">风格分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">拍摄指南</a>
+      <a href="/#faq">常见问题</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#4a5460" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="search" id="siteSearch" placeholder="搜风格、摄影师、地点" aria-label="站内搜索">
+        <div class="search-out" id="searchOut" role="listbox" aria-label="搜索结果"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroH1">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">风格图鉴 · 拍摄前置准备</span>
+        <h1 id="heroH1">写真图片</h1>
+        <p class="lead">把一次拍摄拆成能提前确认的几件事：光位、色温、妆造、场地与成片交付。这里按风格归档样片，附快门与焦段参考，也记录每位摄影师近期在拍什么、档期排到哪天。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#picks">浏览精选图集</a>
+          <a class="btn btn-ghost" href="/#guide">看拍摄前清单</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>36</b>种风格标签</div>
+          <div><b>142</b>组在用样片</div>
+          <div><b>11.08</b>档期核对日</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 400" role="img" aria-label="柔光窗边人像构图示意">
+          <defs>
+            <linearGradient id="bgw" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6e6df"/>
+              <stop offset="1" stop-color="#fbf8f4"/>
+            </linearGradient>
+            <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f0c3ae"/>
+              <stop offset="1" stop-color="#d99f88"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="420" height="400" rx="22" fill="url(#bgw)"/>
+          <!-- 窗格 -->
+          <rect x="30" y="42" width="176" height="226" rx="10" fill="#fdfbf8" stroke="#d3c8bb" stroke-width="2"/>
+          <line x1="118" y1="42" x2="118" y2="268" stroke="#d3c8bb" stroke-width="2"/>
+          <line x1="30" y1="155" x2="206" y2="155" stroke="#d3c8bb" stroke-width="2"/>
+          <path d="M206 60 L330 132 L330 300 L206 240 Z" fill="#f4ece2" opacity=".75"/>
+          <!-- 人物剪影 -->
+          <circle cx="268" cy="150" r="42" fill="url(#skin)"/>
+          <path d="M268 108c16 0 28 8 30 22 2 14-6 22-6 22l-6-8c-8 4-28 4-36 0l-6 8s-8-8-6-22c2-14 14-22 30-22z" fill="#4a3a35"/>
+          <path d="M198 330c8-62 30-92 70-92s62 30 70 92z" fill="#5c6b7d"/>
+          <path d="M268 238c-14 0-24 6-30 18 12 8 48 8 60 0-6-12-16-18-30-18z" fill="#e8b4a0"/>
+          <!-- 相机示意 -->
+          <g transform="translate(300 286)">
+            <rect x="0" y="0" width="86" height="58" rx="9" fill="#2f3a4a"/>
+            <rect x="10" y="-9" width="26" height="12" rx="4" fill="#2f3a4a"/>
+            <circle cx="43" cy="29" r="17" fill="#1e2630" stroke="#e8b4a0" stroke-width="3"/>
+            <circle cx="43" cy="29" r="7" fill="#5c6b7d"/>
+            <circle cx="74" cy="11" r="4" fill="#c2735a"/>
+          </g>
+          <path d="M214 300 L292 300" stroke="#c2735a" stroke-width="2.5" stroke-dasharray="7 6"/>
+          <text x="34" y="320" font-size="13" fill="#75808d" font-family="sans-serif">侧窗 45° · 色温 5200K</text>
+        </svg>
+        <span class="frame-cap">构图示意 · 侧逆光</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <!-- 主内容 -->
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="section" id="overview">
+        <div class="sec-head">
+          <h2>写真图片的三种主流取景逻辑</h2>
+          <span class="sec-note">按场地 × 用光划分</span>
+        </div>
+        <div class="compare">
+          <div class="panel">
+            <span class="lbl">室内棚拍</span>
+            <h3>纯色背景与可控光比</h3>
+            <dl>
+              <dt>典型场地</dt>
+              <dd>上海静安 3.2 米层高影棚，背景纸 2.72 米宽</dd>
+              <dt>用光</dt>
+              <dd>一盏柔光箱做主光，反光板补 1:3 光比</dd>
+              <dt>成片特点</dt>
+              <dd>肤色稳定、服装细节清楚，后期改动空间小</dd>
+              <dt>注意</dt>
+              <dd>空调出风口会让发丝飘动，提前关小风速</dd>
+            </dl>
+          </div>
+          <div class="panel">
+            <span class="lbl">自然光外景</span>
+            <h3>窗边、巷口与树荫</h3>
+            <dl>
+              <dt>典型场地</dt>
+              <dd>杭州馒头山社区、老墙与铁艺窗，避开正午顶光</dd>
+              <dt>用光</dt>
+              <dd>侧逆光为主，日落后 20 分钟的色彩最柔</dd>
+              <dt>成片特点</dt>
+              <dd>环境信息多、氛围足，受天气与路人影响</dd>
+              <dt>注意</dt>
+              <dd>阴天反而适合白裙与浅色针织</dd>
+            </dl>
+          </div>
+          <div class="panel">
+            <span class="lbl">胶片与数码</span>
+            <h3>宽容度与颗粒的差别</h3>
+            <dl>
+              <dt>典型胶卷</dt>
+              <dd>Portra 400 偏暖调，富士 C200 青色更明显</dd>
+              <dt>冲洗周期</dt>
+              <dd>常规 3–5 个工作日，扫描件分辨率约 3000px 长边</dd>
+              <dt>成片特点</dt>
+              <dd>高光过渡缓，颗粒随扫描方式变化</dd>
+              <dt>注意</dt>
+              <dd>同卷不同冲扫店，肤色能差出一档</dd>
+            </dl>
+          </div>
+        </div>
+        <p style="margin-top:var(--sp-3);font-size:.9rem;color:var(--ink-soft)">三者的花费差别主要落在场地与耗材：上海静安影棚时租约 220 元/小时，外景交通与场地许可 0–150 元不等，一卷 135 彩色负片含冲扫约 90 元。选哪一种，先看想要的成片是“可复制”还是“一次一张”。</p>
+      </section>
+
+      <!-- 精选内容推荐 -->
+      <section class="section" id="picks">
+        <div class="sec-head">
+          <span class="kicker">PICKS</span>
+          <h2>近期精选写真图片</h2>
+          <span class="sec-note">每组附拍摄参数</span>
+        </div>
+        <div class="grid-cards">
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/ribenrouguang/420/300" width="420" height="300" loading="lazy" alt="日系柔光室内白墙前穿米色针织的侧身人像" style="object-fit:cover">
+            <div class="body">
+              <span class="tagline">日系柔光室内</span>
+              <h3>白墙 + 落地窗的 50mm 视角</h3>
+              <p>相机 5D Mark IV，50mm f/1.8 收到 f/2.8；窗边加白色纱帘，曝光 +0.3EV 保住肤色。</p>
+              <div class="meta"><span>11月6日更新</span><span>24 张</span></div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/hanxigongyuan/420/300" width="420" height="300" loading="lazy" alt="韩系公园草地逆光下回望的浅色连衣裙人像" style="object-fit:cover">
+            <div class="body">
+              <span class="tagline">韩系公园自然光</span>
+              <h3>日落前 25 分钟的逆光轮廓</h3>
+              <p>85mm f/1.8 全开，对脸部测光后再降 0.7EV，让发丝边缘留出高光。拍摄地为首尔奥林匹克公园。</p>
+              <div class="meta"><span>11月4日更新</span><span>18 张</span></div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/jiaopianjiexiang/420/300" width="420" height="300" loading="lazy" alt="胶片街拍中穿深色风衣走在斑马线旁的半身人像" style="object-fit:cover">
+            <div class="body">
+              <span class="tagline">胶片街拍</span>
+              <h3>Portra 400 与阴天南京西路</h3>
+              <p>测光按阴影读，快门 1/250 秒，光圈 f/4；冲扫店选“低对比扫描”，保留墙面的灰。</p>
+              <div class="meta"><span>11月2日更新</span><span>12 张</span></div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/andiaodeng/420/300" width="420" height="300" loading="lazy" alt="暗调人像中深背景前侧光勾勒的侧脸轮廓" style="object-fit:cover">
+            <div class="body">
+              <span class="tagline">暗调人像</span>
+              <h3>黑绒背景与单灯侧光</h3>
+              <p>主光 90cm 柔光箱放在 10 点钟方向，背景灯压到 1/8 输出。黑衣服注意与背景分离，留 1 指宽边线。</p>
+              <div class="meta"><span>10月30日更新</span><span>16 张</span></div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/guofengchayuan/420/300" width="420" height="300" loading="lazy" alt="国风茶园中持扇侧立的浅绿衣饰人像" style="object-fit:cover">
+            <div class="body">
+              <span class="tagline">国风茶园外景</span>
+              <h3>龙井村清晨的雾与竹影</h3>
+              <p>清晨 6:40 到场地，藤编道具两件，反光板朝北补暗部。雾散得快，拍摄窗口约 40 分钟。</p>
+              <div class="meta"><span>10月28日更新</span><span>21 张</span></div>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/qinglvriji/420/300" width="420" height="300" loading="lazy" alt="情侣旅拍中两人在木栈道上并肩行走的背影" style="object-fit:cover">
+            <div class="body">
+              <span class="tagline">情侣旅拍</span>
+              <h3>木栈道上的边走边拍</h3>
+              <p>35mm 焦段，连拍模式抓步态，快门保持 1/500 秒。两人间距控制在一臂，构图用栈道线做引导。</p>
+              <div class="meta"><span>10月26日更新</span><span>27 张</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="section" id="latest">
+        <div class="sec-head">
+          <h2>最新更新</h2>
+          <span class="sec-note">11月1日—11月8日</span>
+        </div>
+        <ul class="update-list">
+          <li><time>今天 09:20</time><span class="what"><b>日系柔光室内</b>补入 24 张，拍摄于上海静安影棚 3 号棚</span><span class="who">图集</span></li>
+          <li><time>昨天 16:05</time><span class="what"><b>胶片冲扫对比</b>：Portra 400 三家冲扫店的肤色截图并列上传</span><span class="who">对照</span></li>
+          <li><time>11月6日</time><span class="what"><b>摄影师档期</b>专栏更新 6 位，11月剩余可约日期同步</span><span class="who">档期</span></li>
+          <li><time>11月5日</time><span class="what"><b>韩系公园自然光</b>新增首尔奥林匹克公园机位说明与日落时刻表</span><span class="who">图集</span></li>
+          <li><time>11月3日</time><span class="what"><b>妆造清单</b>增加“油皮定妆三步”，附两个品牌产品编号</span><span class="who">清单</span></li>
+          <li><time>11月1日</time><span class="what"><b>选片方法</b>页更新：一组成片只看三遍的筛选流程</span><span class="who">指南</span></li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="section" id="cats">
+        <div class="sec-head">
+          <h2>按风格找样片</h2>
+          <span class="sec-note">括号为在用样片组数</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#picks">日系柔光室内 <span>24</span></a>
+          <a href="/#picks">韩系公园自然光 <span>18</span></a>
+          <a href="/#picks">胶片街拍 <span>15</span></a>
+          <a href="/#picks">暗调人像 <span>13</span></a>
+          <a href="/#picks">国风茶园外景 <span>11</span></a>
+          <a href="/#picks">情侣旅拍 <span>9</span></a>
+          <a href="/#picks">黑白棚拍 <span>8</span></a>
+          <a href="/#picks">证件形象照 <span>12</span></a>
+          <a href="/#picks">婚纱外景 <span>10</span></a>
+          <a href="/#picks">校园毕业照 <span>7</span></a>
+          <a href="/#picks">宠物合影 <span>5</span></a>
+          <a href="/#picks">水下与浅滩 <span>4</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="section" id="deep">
+        <div class="sec-head">
+          <h2>深度解析：贵的那组，贵在可控变量</h2>
+          <span class="sec-note">全页唯一长读区</span>
+        </div>
+        <article class="deep">
+          <p class="deep-lead">同一套风格，报价从 680 元到 4200 元都能遇到。差价通常不在相机，而在拍摄当天有多少变量被提前锁死——场地、光、妆造、时间窗口，每一项都能换算成小时数。</p>
+
+          <h3><span class="no">01</span>场地成本与出片率的对照</h3>
+          <p>拿 10 月 12 日两组客片比：A 组在上海静安影棚 3 号棚，时租 220 元，拍 2 小时成片 46 张，可用 31 张；B 组在开放街区，场地免费，拍 3 小时成片 80 张，可用 22 张。B 组的问题不是技术，是路人与光线在 30 分钟内变了三次。</p>
+          <div class="check"><b>可核对项：</b>影棚合同写明“背景纸更换 1 次免额外费用”，街区拍摄补拍 1 次交通成本 60 元。两组用同一位摄影师的 50mm 定焦，机身同为 EOS R6。</div>
+          <p>这组数字可以反驳一个流行说法：外景一定更自然。自然的前提是天气与时间点配合，阴天、正午、周末人流，任何一项失控都会把 3 小时变成无效等待。</p>
+
+          <h3><span class="no">02</span>冲扫店带来的色差</h3>
+          <p>同一卷 Portra 400，10 月 18 日分送两家店：A 店扫描用 Noritsu HS-1800，肤色偏暖、阴影略灰；B 店用 Frontier SP-3000，青色明显、高光更冲。客户最终选了 A 店的 20 张，B 店的 8 张用于黑白风格补充。</p>
+          <blockquote>“我们店里出片统一走 HS-1800，但客人自带卷要求保留原味，会建议只做基础除尘。”——某冲扫店接单记录，10月20日<cite>转述，非原话逐字稿</cite></blockquote>
+          <p>这里要分清事实与推测：两家机型不同是事实；说 B 店“更不专业”是推测，没有依据。机型差异只决定默认的色彩倾向，客片效果还取决于扫描时的曲线设置。</p>
+
+          <h3><span class="no">03</span>规则前后变化：档期与改期</h3>
+          <p>9 月起多数工作室把免费改期从“提前 48 小时”收窄到“提前 72 小时”，理由是场地押金不退。11 月 6 日更新的 6 位摄影师里，4 位明确写了这条，另 2 位保留 48 小时但限定“仅工作日场次”。</p>
+          <div class="check"><b>说法差异：</b>工作室 A 说“改期不额外收费”，细则第 3 条写“改期一次后取消，定金不退”；工作室 B 直接写“改期收取 30% 场地占用费”。两句话听感差别很大，落到钱上并不远。</div>
+          <p>判断方法很朴素：把“改期、取消、迟到 30 分钟以上、天气不可抗力”四种情形逐条问清楚，让对方用文字回复。口头承诺在纠纷里没有重量。</p>
+
+          <h3><span class="no">04</span>可拆分的检查清单</h3>
+          <p>把 4200 元那单拆开：场地 440 元（2 小时）、妆造 600 元（含 1 次试妆）、摄影 1800 元（4 小时含 2 个机位）、胶片与冲扫 210 元、精修 20 张 900 元、备用服装与熨烫 150 元，其余为交通与道具。任何一项拿掉，报价都能往下走，但对应的成片风险会上升。</p>
+          <div class="verdict"><b>结论：</b>比价时先比“每小时有效拍摄张数”和“改期条款”，再比总价。680 元那单如果只拍 40 分钟、片量 15 张，折算下来并不便宜。</div>
+        </article>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="section" id="guide">
+        <div class="sec-head">
+          <h2>拍摄前 7 天要做完的事</h2>
+          <span class="sec-note">按顺序执行</span>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>定风格，先存 9 张图</h3>
+            <p>从三个不同来源各存 3 张，标注喜欢的是光、色调还是姿势。只有色调偏好就加一句“不要过曝”，比只发一句“想要日系”有用得多。</p>
+          </div>
+          <div class="step">
+            <h3>确认场地与备用方案</h3>
+            <p>室外场记下两个备选点，距离不超过 2 公里。11 月杭州日落约 17:05，16:20 前必须到场，否则光线掉得比预期快。</p>
+          </div>
+          <div class="step">
+            <h3>妆造试一次，拍照留档</h3>
+            <p>试妆当天用手机在自然光下拍正面与侧面，发给摄影师确认。油皮在 T 区加散粉定妆，避免第 40 分钟后高光过亮。</p>
+          </div>
+          <div class="step">
+            <h3>服装按“上浅下深”备两套</h3>
+            <p>主套与备用套色系错开，避免全是低饱和。带一双平底鞋，外景走 1 小时以上脚会肿。衬衫提前熨，褶皱在 50mm 镜头下很明显。</p>
+          </div>
+          <div class="step">
+            <h3>交接拍摄清单与时间表</h3>
+            <p>清单写明必拍镜头 5 个：正面半身、侧脸、全身环境、手部细节、两人或宠物合影。时间表留 15 分钟机动，别把 6 套服装塞进 2 小时。</p>
+          </div>
+          <div class="step">
+            <h3>谈定交付格式与周期</h3>
+            <p>问清楚：底片是否全给、精修几张、交片是网盘还是 U 盘、超期怎么算。10 月有客户因“精修 7 天”与“工作日 7 天”理解不同，多等了一周。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 用户互动栏目一：评论 -->
+      <section class="section" id="comments">
+        <div class="sec-head">
+          <h2>拍过的人怎么说</h2>
+          <span class="sec-note">来自近期客片反馈</span>
+        </div>
+        <div class="comments">
+          <div class="comment">
+            <div class="who"><span class="ava">林</span><div><b>林小满</b><br><span class="rel">10月26日 · 日系柔光室内</span></div></div>
+            <p>窗边那组确实好看，但纱帘是摄影师自己带的，我以为是棚里标配。下次问清楚道具归属。</p>
+            <span class="ref">指向：日系柔光室内</span>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">周</span><div><b>周屿</b><br><span class="rel">10月30日 · 暗调人像</span></div></div>
+            <p>黑绒背景那组，衣服和背景糊在一起了，精修也救不回来。后来补拍加了侧逆光才分开，来回多花两周。</p>
+            <span class="ref">指向：暗调人像</span>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">陈</span><div><b>陈默</b><br><span class="rel">11月2日 · 胶片街拍</span></div></div>
+            <p>胶片出片慢是知道的，3 天才拿到扫描件可以接受。色彩偏青，比样片冷一点，能接受就没问题。</p>
+            <span class="ref">指向：胶片街拍</span>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">吴</span><div><b>吴桐</b><br><span class="rel">11月5日 · 韩系公园自然光</span></div></div>
+            <p>公园人多，摄影师带我们走了 800 米才找到没人入镜的路段。体力不太好的人提前说，别硬走。</p>
+            <span class="ref">指向：韩系公园自然光</span>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">何</span><div><b>何遇</b><br><span class="rel">10月28日 · 国风茶园外景</span></div></div>
+            <p>清晨五点半起床是真的，但 6:40 的雾值这个价。茶园主人收 50 元入场费，提前说清楚就行。</p>
+            <span class="ref">指向：国风茶园外景</span>
+          </div>
+          <div class="comment">
+            <div class="who"><span class="ava">赵</span><div><b>赵一鸣</b><br><span class="rel">11月6日 · 档期</span></div></div>
+            <p>看完档期表约了 11月14日，比在社交平台上一条条问快得多。就是有的摄影师只写了“可约”，没写具体时段。</p>
+            <span class="ref">指向：摄影师档期</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 用户互动栏目二：晒图打卡 -->
+      <section class="section" id="board">
+        <div class="sec-head">
+          <h2>本周晒图打卡墙</h2>
+          <span class="sec-note">11月3日—11月8日 · 共 27 张投稿</span>
+        </div>
+        <p style="font-size:.9rem;color:var(--ink-soft)">投稿只收自己拍摄或经摄影师同意的成片，附一句参数或场地说明。本周入选 6 张，按投稿顺序排。</p>
+        <ul class="update-list">
+          <li><time>11月8日</time><span class="what"><b>阿泽</b>：午休时间用 35mm 拍的窗边侧影，色温 4800K</span><span class="who">打卡</span></li>
+          <li><time>11月7日</time><span class="what"><b>小鹿</b>：银杏道逆光，1/640 秒 f/2，日落后 15 分钟</span><span class="who">打卡</span></li>
+          <li><time>11月6日</time><span class="what"><b>南南</b>：黑背景单灯，家里书房拉窗帘拍的</span><span class="who">打卡</span></li>
+          <li><time>11月5日</time><span class="what"><b>老高</b>：宠物与主人合影，蹲低到宠物眼睛高度</span><span class="who">打卡</span></li>
+        </ul>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="sec-head">
+          <h2>写真图片常见问题</h2>
+          <span class="sec-note">按预约流程排序</span>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>预约写真拍摄时，需要提前多久沟通风格？</summary>
+            <div class="ans"><p>建议至少提前 14 天。摄影师需要时间确认场地和妆造，11 月的周末档期通常在本月月初就被订掉一半。只提前 3 天，往往只能从现有场地方案里挑，风格定制空间变小。</p></div>
+          </details>
+          <details>
+            <summary>日系柔光和韩系自然光，成片差别怎么判断？</summary>
+            <div class="ans"><p>看阴影与对比。日系柔光的暗部有细节、整体反差低，适合浅色服装；韩系自然光对比更高、肤色偏冷，逆光边缘高光更容易保留。同一套衣服在两种光线下，肤色能差出半档，要求摄影师各给一张原图看。</p></div>
+          </details>
+          <details>
+            <summary>胶片写真图片为什么比数码贵？</summary>
+            <div class="ans"><p>贵在耗材与流程。一卷 135 彩色负片含冲扫约 90 元，按 36 张计算，选 20 张需要至少 2 卷；扫描后还要人工调色。数码一次拍摄 200 张可现场回看，胶片没有回看环节，废片率会更高。</p></div>
+          </details>
+          <details>
+            <summary>拍暗调人像，服装颜色怎么选才不糊在背景里？</summary>
+            <div class="ans"><p>避开纯黑与深灰大块面料。米白、砖红、深蓝都能在深背景前分离出轮廓；如果一定要穿黑，让摄影师加一盏背景灯或侧逆光勾勒边线，拍摄前用手机试拍确认。</p></div>
+          </details>
+          <details>
+            <summary>外景遇到下雨，改期费用怎么算？</summary>
+            <div class="ans"><p>先看合同里的不可抗力条款。多数工作室对雨天改期免收费，但要求提前 48 小时通知；临时起意的改期可能收 30% 场地占用费。11 月 6 日更新的 6 位摄影师里，4 位执行 72 小时规则。</p></div>
+          </details>
+          <details>
+            <summary>底片会不会全给，精修张数怎么谈？</summary>
+            <div class="ans"><p>常见套餐是“底片全给 + 精修 10–20 张”。谈的时候问清底片是原格式还是压缩 JPEG、精修是否含修皮肤与修背景、超期交付怎么补偿。把“工作日 7 天”写成具体日期更稳妥。</p></div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="section" id="news">
+        <div class="sec-head">
+          <h2>相关资讯</h2>
+          <span class="sec-note">场地、档期、耗材</span>
+        </div>
+        <div class="news-grid">
+          <article class="news-item">
+            <time>11月7日</time>
+            <div><h3>静安 3 号棚 11月排期释放 8 个半天</h3><p>工作日下午 13:00–17:00 时段空出，时租维持 220 元。</p></div>
+          </article>
+          <article class="news-item">
+            <time>11月6日</time>
+            <div><h3>六位摄影师档期更新至 11月30日</h3><p>其中两位 11月14日之后仅剩工作日可约。</p></div>
+          </article>
+          <article class="news-item">
+            <time>11月4日</time>
+            <div><h3>Portra 400 价格上调约 6%</h3><p>本地冲扫店报价单已更新，含冲扫套餐同步调整。</p></div>
+          </article>
+          <article class="news-item">
+            <time>11月1日</time>
+            <div><h3>龙井村茶园拍摄入场费新规</h3><p>每人 50 元，团队超过 4 人按 40 元计，需提前一天报备。</p></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="section" id="related">
+        <div class="sec-head">
+          <h2>相关推荐</h2>
+          <span class="sec-note">继续看的下一步</span>
+        </div>
+        <div class="quote-card">
+          <p>如果只记一句：把“想要的风格”换成三个可验证的条件——光从哪个方向来、阴影是否保留细节、成片多久能拿到。</p>
+          <cite>一位拍了 9 年的商业摄影师，谈接单沟通</cite>
+        </div>
+        <div class="tag-index" style="margin-top:var(--sp-3)">
+          <a href="/#guide">写真拍摄前清单 <span>7 步</span></a>
+          <a href="/#deep">写真报价拆解方法 <span>对照</span></a>
+          <a href="/#picks">日系柔光室内样片 <span>24</span></a>
+          <a href="/#picks">胶片冲扫色差对照 <span>2 家</span></a>
+          <a href="/#faq">改期与定金条款 <span>FAQ</span></a>
+          <a href="/#cats">证件形象照与毕业照 <span>19</span></a>
+          <a href="/#guide">油皮定妆三步 <span>清单</span></a>
+        </div>
+      </section>
+
+      <!-- 补充板块：榜单 -->
+      <section class="section" id="rank">
+        <div class="sec-head">
+          <h2>11月第一周样片热度榜</h2>
+          <span class="sec-note">按查看与收藏计</span>
+        </div>
+        <ol class="rank-list">
+          <li><span>日系柔光室内 · 白墙落地窗 50mm</span><span class="val">查看 1260</span></li>
+          <li><span>韩系公园自然光 · 日落前逆光</span><span class="val">查看 1044</span></li>
+          <li><span>暗调人像 · 单灯侧光分离</span><span class="val">查看 918</span></li>
+          <li><span>胶片街拍 · Portra 400 阴天</span><span class="val">查看 803</span></li>
+          <li><span>国风茶园外景 · 清晨薄雾</span><span class="val">查看 721</span></li>
+          <li><span>情侣旅拍 · 木栈道行走</span><span class="val">查看 655</span></li>
+        </ol>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="sidebar" aria-label="辅助导航">
+      <div class="side-card">
+        <h3>栏目导航</h3>
+        <nav class="side-nav" id="sideNav" aria-label="页内导航">
+          <a href="/#overview">风格概览</a>
+          <a href="/#picks">精选图集</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#cats">风格分类</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">拍摄指南</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#board">晒图打卡</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#related">相关推荐</a>
+          <a href="/#rank">热度榜</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <h3>本页数据</h3>
+        <ul class="side-stat" style="list-style:none;padding:0;margin:0">
+          <li><span>风格标签</span><b>36 种</b></li>
+          <li><span>在用样片</span><b>142 组</b></li>
+          <li><span>可约摄影师</span><b>6 位</b></li>
+          <li><span>更新核对日</span><b>11月8日</b></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>近期档期</h3>
+        <ul class="side-stat" style="list-style:none;padding:0;margin:0">
+          <li><span>11月14日</span><b>2 位可约</b></li>
+          <li><span>11月15日</span><b>已满</b></li>
+          <li><span>11月21日</span><b>4 位可约</b></li>
+          <li><span>11月22日</span><b>1 位可约</b></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="/#top">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#e8b4a0"/>
+            <circle cx="32" cy="26" r="10" fill="#2f3a4a"/>
+            <path d="M14 54c3-12 9-17 18-17s15 5 18 17" fill="#2f3a4a"/>
+          </svg>
+          <span>写真图片</span>
+        </a>
+        <p>按用光与场地归档的样片库，附拍摄参数和可核对的报价拆分，帮你在预约前把条件讲清楚。</p>
+        <p style="color:#8b97a4;font-size:.78rem">页面更新时间：2026年11月8日 · 对应“最新更新”栏目中的 6 条记录</p>
+      </div>
+      <div class="foot-col">
+        <h4>风格图集</h4>
+        <ul>
+          <li><a href="/#picks">日系柔光室内</a></li>
+          <li><a href="/#picks">韩系公园自然光</a></li>
+          <li><a href="/#picks">胶片街拍</a></li>
+          <li><a href="/#picks">暗调人像</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>拍摄方法</h4>
+        <ul>
+          <li><a href="/#guide">拍摄前 7 天清单</a></li>
+          <li><a href="/#deep">报价拆解方法</a></li>
+          <li><a href="/#faq">改期与定金条款</a></li>
+          <li><a href="/#cats">证件形象照</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>社区与更新</h4>
+        <ul>
+          <li><a href="/#comments">客片反馈</a></li>
+          <li><a href="/#board">晒图打卡墙</a></li>
+          <li><a href="/#news">场地与档期资讯</a></li>
+          <li><a href="/#rank">样片热度榜</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>样片、摄影师档期与报价均为示例数据，用于说明遴选与比价方法，实际情况以对方书面确认为准。</span>
+      <span>© 2026 写真图片 · 内容整理</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"写真图片",
+  "inLanguage":"zh-CN",
+  "description":"写真图片风格图鉴与拍摄指南，覆盖日系柔光、韩系自然光、胶片街拍、暗调人像等风格的用光、参数与预约要点。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"预约写真拍摄时，需要提前多久沟通风格？","acceptedAnswer":{"@type":"Answer","text":"建议至少提前 14 天。摄影师需要时间确认场地和妆造，11 月的周末档期通常在本月月初就被订掉一半。只提前 3 天，往往只能从现有场地方案里挑。"}},
+    {"@type":"Question","name":"日系柔光和韩系自然光，成片差别怎么判断？","acceptedAnswer":{"@type":"Answer","text":"看阴影与对比。日系柔光的暗部有细节、整体反差低；韩系自然光对比更高、肤色偏冷。可以要求摄影师各给一张原图对比。"}},
+    {"@type":"Question","name":"胶片写真图片为什么比数码贵？","acceptedAnswer":{"@type":"Answer","text":"贵在耗材与流程。一卷 135 彩色负片含冲扫约 90 元，按 36 张计算，选 20 张需要至少 2 卷，扫描后还要人工调色。"}},
+    {"@type":"Question","name":"拍暗调人像，服装颜色怎么选才不糊在背景里？","acceptedAnswer":{"@type":"Answer","text":"避开纯黑与深灰大块面料。米白、砖红、深蓝都能在深背景前分离出轮廓；如果穿黑，加一盏背景灯或侧逆光勾勒边线。"}},
+    {"@type":"Question","name":"外景遇到下雨，改期费用怎么算？","acceptedAnswer":{"@type":"Answer","text":"先看合同里的不可抗力条款。多数工作室对雨天改期免收费，但要求提前 48 小时通知；临时改期可能收 30% 场地占用费。"}},
+    {"@type":"Question","name":"底片会不会全给，精修张数怎么谈？","acceptedAnswer":{"@type":"Answer","text":"常见套餐是底片全给加精修 10–20 张。要问清底片格式、精修是否含修皮肤与修背景、超期交付怎么补偿。"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var navMain=document.getElementById('navMain');
+  if(menuBtn&&navMain){
+    menuBtn.addEventListener('click',function(){
+      var open=navMain.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+      menuBtn.setAttribute('aria-label',open?'收起主导航':'展开主导航');
+    });
+    navMain.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){
+        navMain.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&navMain.classList.contains('open')){
+        navMain.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var input=document.getElementById('siteSearch');
+  var out=document.getElementById('searchOut');
+  var links=[];
+  document.querySelectorAll('.grid-cards .pick-card, .update-list li, .tag-index a, .faq details, .news-item, .comment, .deep h3, .steps .step').forEach(function(el){
+    var a=el.querySelector('a');
+    var text=el.textContent.replace(/\s+/g,' ').trim();
+    var href=a?a.getAttribute('href'):'';
+    if(!href){
+      var sec=el.closest('section');
+      href=sec&&sec.id?'/' + '#' + sec.id:'/#top';
+    }
+    links.push({t:text,h:href,el:el});
+  });
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function render(q){
+    if(!out)return;
+    q=q.trim();
+    if(!q){out.classList.remove('show');out.innerHTML='';return;}
+    var hits=links.filter(function(x){return x.t.indexOf(q)>-1;}).slice(0,8);
+    if(!hits.length){
+      out.innerHTML='<div class="none">没有找到“'+esc(q)+'”，试试“日系”“胶片”“档期”“改期”。</div>';
+    }else{
+      out.innerHTML=hits.map(function(x){
+        var idx=x.t.indexOf(q);
+        var snippet=x.t.slice(Math.max(0,idx-12),idx+q.length+30);
+        return '<a href="'+x.h+'">'+esc(snippet)+'</a>';
+      }).join('');
+    }
+    out.classList.add('show');
+  }
+  if(input){
+    input.addEventListener('input',function(){render(input.value);});
+    input.addEventListener('keydown',function(e){
+      if(e.key==='Escape'){out.classList.remove('show');input.blur();}
+    });
+    document.addEventListener('click',function(e){
+      if(!e.target.closest('.search-box'))out.classList.remove('show');
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(!toTop)return;
+    if(window.scrollY>500)toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  if(toTop){
+    toTop.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  }
+
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections=sideLinks.map(function(a){
+    var id=a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+  if('IntersectionObserver' in window&&sections.length){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          sideLinks.forEach(function(a){a.classList.remove('on');});
+          var match=sideLinks.filter(function(a){return a.getAttribute('href').split('#')[1]===en.target.id;})[0];
+          if(match)match.classList.add('on');
+        }
+      });
+    },{rootMargin:'-25% 0px -60% 0px',threshold:0});
+    sections.forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+</body>
+        </html>
