@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>r星每日必吃大瓜今日大赛-赛程与爆料汇总</title>
+<meta name="description" content="r星每日必吃大瓜今日大赛是每日更新的趣味猜测与爆料栏目，整理今日大赛对阵、选手名单、开赛时间、比分结果和场外趣闻，附规则说明与历史榜单，方便一次看全当天动态。">
+<meta name="keywords" content="r星每日必吃大瓜今日大赛">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1f3b'/%3E%3Cpath d='M32 10l6 14 15 2-11 10 3 15-13-8-13 8 3-15-11-10 15-2z' fill='%23ffcc4d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1b1f3b;
+  --ink-soft:#3c4266;
+  --paper:#f6f4ef;
+  --card:#ffffff;
+  --line:#d9d5cb;
+  --accent:#ff5c39;
+  --accent-soft:#ffe3da;
+  --gold:#ffcc4d;
+  --teal:#1f7a6d;
+  --muted:#6d6a63;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 2px 0 rgba(27,31,59,.08),0 8px 24px rgba(27,31,59,.07);
+  --gap:clamp(14px,2.2vw,26px);
+  --sticky-h:96px;
+  --font:system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);font-size:16px;line-height:1.75;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;letter-spacing:.2px}
+p{margin:0 0 .8em}
+ul,ol{margin:0 0 .8em;padding-left:1.25em}
+section{scroll-margin-top:calc(var(--sticky-h) + 14px)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.sticky-wrap{position:sticky;top:0;z-index:60}
+.notice-bar{
+  background:var(--ink);color:#fff;font-size:13.5px;
+  padding:7px 16px;display:flex;gap:12px;align-items:center;justify-content:center;
+  flex-wrap:wrap;text-align:center;
+}
+.notice-bar .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
+.notice-bar strong{color:var(--gold);font-weight:700}
+.notice-bar a{color:#fff;text-underline-offset:3px}
+
+.site-header{
+  background:rgba(246,244,239,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  padding:10px clamp(14px,3vw,32px);
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-text{font-weight:800;font-size:clamp(15px,2.4vw,18px);letter-spacing:.3px;color:var(--ink)}
+.brand-text small{display:block;font-size:10.5px;font-weight:600;color:var(--muted);letter-spacing:1.6px}
+.main-nav{margin-left:auto}
+.menu-btn{
+  display:none;align-items:center;gap:8px;background:var(--ink);color:#fff;
+  border:0;border-radius:var(--radius-s);padding:9px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;
+}
+.nav-list{list-style:none;display:flex;gap:4px;margin:0;padding:0;flex-wrap:wrap}
+.nav-list a{
+  display:block;text-decoration:none;font-size:14px;font-weight:600;color:var(--ink-soft);
+  padding:7px 11px;border-radius:99px;transition:background .15s,color .15s;
+}
+.nav-list a:hover{background:var(--accent-soft);color:var(--ink)}
+.nav-list a.active{background:var(--ink);color:#fff}
+.header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-form{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:99px;padding:2px 4px 2px 12px}
+.search-form input{
+  border:0;background:transparent;font:inherit;font-size:14px;width:150px;padding:6px 4px;color:var(--ink);
+}
+.search-form input:focus{outline:none}
+.search-form button{
+  border:0;background:var(--accent);color:#fff;font:inherit;font-size:13px;font-weight:700;
+  border-radius:99px;padding:6px 13px;cursor:pointer;
+}
+.search-status{font-size:12.5px;color:var(--teal);font-weight:700;min-height:0}
+.search-status.empty{color:var(--accent)}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1200px 420px at 86% -10%,rgba(255,204,77,.4),transparent 60%),
+    radial-gradient(900px 380px at 4% 110%,rgba(255,92,57,.22),transparent 60%),
+    var(--ink);
+  color:#fff;
+}
+.hero-inner{
+  max-width:1180px;margin:0 auto;padding:clamp(34px,6vw,66px) clamp(16px,3.4vw,36px);
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:clamp(24px,4vw,52px);align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  letter-spacing:1.6px;color:var(--gold);border:1px solid rgba(255,204,77,.5);
+  border-radius:99px;padding:4px 13px;margin-bottom:16px;
+}
+.hero h1{
+  font-size:clamp(26px,4.6vw,44px);
+  color:#fff;margin-bottom:14px;letter-spacing:.5px;
+}
+.hero p.lead{font-size:clamp(14.5px,1.7vw,17px);color:#d8d8e8;max-width:36em;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;
+  padding:11px 22px;border-radius:99px;border:1px solid transparent;
+  transition:transform .15s,background .15s;
+}
+.btn-primary{background:var(--gold);color:var(--ink)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:clamp(16px,3vw,34px);flex-wrap:wrap}
+.hero-stats div{font-size:12.5px;color:#b8bad2;letter-spacing:.6px}
+.hero-stats b{display:block;font-size:clamp(20px,3vw,27px);color:#fff;letter-spacing:0;line-height:1.2}
+/* 原创视觉：舞台聚光灯 + 瓜盘 */
+.hero-art{position:relative;min-height:230px}
+.hero-art svg{width:100%;height:auto;display:block}
+@media (max-width:860px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{order:2;max-width:420px;margin:0 auto}
+  .hero p.lead{max-width:none}
+}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,3.4vw,36px)}
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;
+  gap:clamp(20px,3.2vw,40px);align-items:start;
+  padding:clamp(26px,4vw,48px) 0 20px;
+}
+.side-rail{position:sticky;top:calc(var(--sticky-h) + 18px);display:flex;flex-direction:column;gap:16px}
+
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .side-rail{position:static;order:2;margin-top:8px}
+  .main-col{order:1}
+}
+@media (max-width:980px){
+  .menu-btn{display:inline-flex}
+  .main-nav{margin-left:auto;order:3;width:100%}
+  .nav-list{
+    display:none;flex-direction:column;gap:2px;padding:10px 0 4px;
+    border-top:1px solid var(--line);margin-top:8px;
+  }
+  .nav-list.open{display:flex}
+  .nav-list a{padding:10px 12px;border-radius:var(--radius-s)}
+  .header-tools{margin-left:0}
+  .search-form input{width:120px}
+}
+@media (max-width:420px){
+  .header-tools{width:100%}
+  .search-form{flex:1}
+  .search-form input{width:100%}
+}
+
+/* ---------- 通用板块样式 ---------- */
+.block{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(18px,2.6vw,28px);margin-bottom:var(--gap);box-shadow:var(--shadow);
+}
+.block-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.block-head h2{font-size:clamp(19px,2.4vw,23px)}
+.block-head .kicker{
+  font-size:11.5px;font-weight:800;letter-spacing:2px;color:var(--accent);
+  border:1px solid var(--accent-soft);background:var(--accent-soft);
+  padding:1px 9px;border-radius:99px;
+}
+.block-head .more{margin-left:auto;font-size:13px;font-weight:700;color:var(--teal);text-decoration:none}
+.block-head .more:hover{text-decoration:underline}
+.sub{font-size:13.5px;color:var(--muted);margin:-8px 0 16px}
+
+/* 概览：非对称组合 */
+.overview-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:16px}
+.overview-main{
+  background:linear-gradient(160deg,#fff8e6,#fff);
+  border:1px solid #f0e3bf;border-radius:var(--radius-s);padding:18px;
+}
+.overview-main h3{font-size:17px;margin-bottom:8px}
+.overview-side{display:flex;flex-direction:column;gap:12px}
+.fact-chip{display:flex;gap:10px;align-items:flex-start;background:#f3f6f5;border:1px solid #dbe7e3;border-radius:var(--radius-s);padding:11px 13px}
+.fact-chip b{font-size:17px;color:var(--teal);line-height:1.2;flex:none}
+.fact-chip span{font-size:13.5px;color:var(--ink-soft)}
+@media (max-width:720px){.overview-grid{grid-template-columns:1fr}}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{
+  display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);overflow:hidden;text-decoration:none;
+  transition:transform .16s,border-color .16s;
+}
+.card:hover{transform:translateY(-3px);border-color:var(--ink-soft)}
+.card img{width:100%;height:132px;object-fit:cover}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card-body h3{font-size:15.5px}
+.card-body p{font-size:13.5px;color:var(--muted);margin:0;flex:1}
+.card-meta{font-size:12px;color:var(--teal);font-weight:700;letter-spacing:.3px}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;padding:0;margin:0}
+.tight-list li{
+  display:flex;gap:12px;align-items:baseline;padding:10px 0;
+  border-bottom:1px dashed var(--line);font-size:14.5px;
+}
+.tight-list li:last-child{border-bottom:0}
+.tight-list time{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;flex:none;width:64px}
+.tight-list .t{font-weight:700}
+.tight-list .t:hover{color:var(--accent)}
+.tight-list .src{font-size:12px;color:var(--muted);margin-left:auto;flex:none}
+@media (max-width:520px){
+  .tight-list li{flex-wrap:wrap}
+  .tight-list .src{margin-left:0;width:100%}
+}
+
+/* 分类索引标签 */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{
+  text-decoration:none;font-size:14px;font-weight:700;color:var(--ink-soft);
+  background:var(--paper);border:1px solid var(--line);border-radius:99px;
+  padding:7px 15px;transition:background .15s,color .15s;
+}
+.tag-index a:hover{background:var(--ink);color:#fff}
+.tag-index a span{font-weight:600;color:var(--muted);font-size:12px;margin-left:5px}
+.tag-index a:hover span{color:#cfd2e6}
+
+/* 深度解析：分栏正文 */
+.article-prose{font-size:15.5px;line-height:1.85}
+.article-prose h3{
+  font-size:17px;margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--accent);
+}
+.article-prose h3:first-child{margin-top:0}
+.verdict{
+  background:#fff8e6;border:1px solid #f0e3bf;border-left:5px solid var(--gold);
+  border-radius:var(--radius-s);padding:14px 16px;margin:16px 0;font-size:14.5px;
+}
+.verdict b{color:var(--ink)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+.split .cell{background:#f7f7fb;border:1px solid #e4e4f0;border-radius:var(--radius-s);padding:13px 15px;font-size:14px}
+.split .cell h4{font-size:14px;margin-bottom:6px;color:var(--teal)}
+.split .cell ul{margin:0;padding-left:1.1em}
+.split .cell li{margin-bottom:4px}
+@media (max-width:640px){.split{grid-template-columns:1fr}}
+.check-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.check-table th{background:#f1efe8;font-weight:800;font-size:13.5px}
+.check-table td:first-child{font-weight:700;color:var(--ink-soft);width:34%}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;padding:0;counter-reset:step;margin:0}
+.steps li{
+  counter-increment:step;position:relative;padding:0 0 18px 48px;
+  border-left:2px dashed var(--line);margin-left:17px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{
+  content:counter(step);position:absolute;left:-18px;top:-2px;
+  width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--gold);
+  font-weight:800;font-size:15px;display:grid;place-items:center;
+}
+.steps h3{font-size:15.5px;margin-bottom:4px}
+.steps p{font-size:14px;color:var(--ink-soft);margin:0}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden}
+.compare>div{padding:14px 16px;font-size:14px}
+.compare .a{background:#fff}
+.compare .b{background:#f3f6f5;border-left:1px solid var(--line)}
+.compare h3{font-size:14.5px;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.compare ul{margin:0;padding-left:1.1em}
+.compare li{margin-bottom:5px}
+@media (max-width:620px){.compare{grid-template-columns:1fr}.compare .b{border-left:0;border-top:1px solid var(--line)}}
+
+/* FAQ */
+details.faq{border:1px solid var(--line);border-radius:var(--radius-s);margin-bottom:10px;background:#fff}
+details.faq[open]{border-color:var(--ink-soft)}
+details.faq summary{
+  cursor:pointer;font-weight:700;font-size:14.8px;padding:12px 40px 12px 15px;
+  list-style:none;position:relative;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);
+  font-size:20px;font-weight:700;color:var(--accent);line-height:1;
+}
+details.faq[open] summary::after{content:"–"}
+details.faq .ans{padding:0 15px 14px;font-size:14.3px;color:var(--ink-soft)}
+details.faq .ans p{margin:0 0 .6em}
+
+/* 评论 */
+.comment{display:flex;gap:12px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.comment:last-child{border-bottom:0}
+.avatar{
+  width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-weight:800;font-size:15px;color:#fff;background:var(--ink);
+}
+.avatar.c2{background:var(--teal)}
+.avatar.c3{background:var(--accent)}
+.avatar.c4{background:#7a5c2e}
+.comment .body{font-size:14.3px;min-width:0}
+.comment .who{font-size:12.8px;font-weight:800;color:var(--ink-soft);margin-bottom:3px}
+.comment .who span{font-weight:600;color:var(--muted);margin-left:8px}
+.comment p{margin:0 0 .4em}
+.comment .re{font-size:12.5px;color:var(--teal);font-weight:700}
+
+/* 排行榜 */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank-list li{
+  counter-increment:rk;display:flex;gap:12px;align-items:center;
+  padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  content:counter(rk);width:26px;height:26px;border-radius:8px;flex:none;
+  display:grid;place-items:center;font-weight:800;font-size:13px;
+  background:#eeece4;color:var(--ink-soft);
+}
+.rank-list li:nth-child(1)::before{background:var(--gold);color:var(--ink)}
+.rank-list li:nth-child(2)::before{background:#d9dbe6;color:var(--ink)}
+.rank-list li:nth-child(3)::before{background:#f0d0b8;color:var(--ink)}
+.rank-list .nm{font-weight:700}
+.rank-list .sc{margin-left:auto;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{position:relative;padding:0 0 16px 26px;border-left:2px solid #e4e4f0;margin-left:6px;font-size:14.2px}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--accent);
+}
+.timeline time{font-weight:800;color:var(--ink);font-size:13px;margin-right:8px}
+
+/* 引语卡 */
+.quote-card{
+  background:var(--ink);color:#e9e9f4;border-radius:var(--radius);
+  padding:20px 22px;font-size:15px;line-height:1.8;position:relative;
+}
+.quote-card::before{
+  content:"“";position:absolute;top:-4px;left:14px;font-size:64px;color:var(--gold);opacity:.5;font-family:Georgia,serif;
+}
+.quote-card p{margin:0 0 10px;padding-left:18px}
+.quote-card footer{font-size:12.5px;color:#b8bad2;padding-left:18px;font-weight:700}
+
+/* 侧栏 */
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 17px;box-shadow:var(--shadow);
+}
+.side-card h2{font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.side-card h2::before{content:"";width:4px;height:16px;background:var(--accent);border-radius:2px}
+.side-nav{list-style:none;padding:0;margin:0;font-size:14px}
+.side-nav a{
+  display:block;text-decoration:none;padding:7px 10px;border-radius:var(--radius-s);
+  color:var(--ink-soft);font-weight:600;
+}
+.side-nav a:hover{background:var(--paper)}
+.side-nav a.active{background:var(--ink);color:#fff}
+.side-note{font-size:13px;color:var(--muted);margin:0}
+.side-tags{display:flex;flex-wrap:wrap;gap:7px}
+.side-tags a{
+  font-size:12.5px;font-weight:700;text-decoration:none;color:var(--teal);
+  background:#edf5f3;border-radius:99px;padding:4px 11px;
+}
+.side-tags a:hover{background:var(--teal);color:#fff}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;
+  background:var(--ink);color:#fff;border:0;border-radius:50%;
+  width:46px;height:46px;font-size:20px;cursor:pointer;display:grid;place-items:center;
+  box-shadow:0 6px 18px rgba(27,31,59,.28);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s,transform .2s,visibility .2s;
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+@media (max-width:520px){.to-top{right:12px;bottom:14px;width:42px;height:42px}}
+
+/* 页脚 */
+.site-footer{background:var(--ink);color:#cfd2e6;margin-top:30px;padding:clamp(30px,4.5vw,52px) 0 22px;font-size:14px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:clamp(18px,3vw,34px)}
+.site-footer h2{color:#fff;font-size:14.5px;margin-bottom:11px}
+.site-footer a{color:#cfd2e6;text-decoration:none;font-size:13.5px}
+.site-footer a:hover{color:var(--gold)}
+.site-footer ul{list-style:none;padding:0;margin:0}
+.site-footer li{margin-bottom:7px}
+.footer-brand{font-weight:800;color:#fff;font-size:17px;display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.footer-brand svg{width:30px;height:30px}
+.footer-desc{font-size:13.5px;line-height:1.8;max-width:32em;color:#b8bad2}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.14);margin-top:26px;padding-top:16px;
+  display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;
+  font-size:12.5px;color:#8f93b0;
+}
+@media (max-width:760px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.footer-grid{grid-template-columns:1fr}}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="notice-bar">
+    <span class="dot" aria-hidden="true"></span>
+    <span><strong>r星每日必吃大瓜今日大赛</strong> 11月8日场次 09:00 开赛｜第 6 轮“橙队 vs 蓝队”对阵已公布</span>
+    <a href="/#schedule">查看完整赛程 →</a>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="/#top" aria-label="返回首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1b1f3b"/>
+        <path d="M32 9l6.2 14.4L54 25.3 42.8 35.6 46 51.5 32 43.6 18 51.5l3.2-15.9L10 25.3l15.8-1.9z" fill="#ffcc4d"/>
+        <circle cx="32" cy="31" r="5" fill="#ff5c39"/>
+      </svg>
+      <span class="brand-text">r星每日必吃大瓜今日大赛<small>DAILY GUA ARENA</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主题导航">
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navList">
+        <span aria-hidden="true">☰</span> 频道菜单
+      </button>
+      <ul class="nav-list" id="navList">
+        <li><a href="/#schedule">今日赛程</a></li>
+        <li><a href="/#picks">精选爆料</a></li>
+        <li><a href="/#players">选手名单</a></li>
+        <li><a href="/#rules">规则说明</a></li>
+        <li><a href="/#rank">积分榜</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <form class="search-form" id="searchForm" role="search" aria-label="站内查找">
+        <label class="sr-only" for="q">查找选手、对阵或爆料条目</label>
+        <input id="q" type="search" placeholder="查找选手或对阵" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+      <span class="search-status" id="searchStatus" aria-live="polite"></span>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">第 6 轮 · 2026年11月8日</span>
+        <h1 id="heroTitle">r星每日必吃大瓜今日大赛</h1>
+        <p class="lead">每天上午 9 点开一场，8 名选手、4 组对局、单场 25 分钟。这里汇总当天对阵、选手近况、场外爆料与赛后比分，也保留往轮可回查的完整记录，供你判断哪一条瓜站得住脚。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#schedule">进入今日赛程</a>
+          <a class="btn btn-ghost" href="/#rules">先看规则说明</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>8</b>今日参赛选手</div>
+          <div><b>4</b>对局组数</div>
+          <div><b>25</b>单场时长（分钟）</div>
+          <div><b>6</b>已完赛轮次</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 330" role="img">
+          <defs>
+            <linearGradient id="spot" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffcc4d" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#ffcc4d" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="210" cy="308" rx="150" ry="16" fill="#0e1128" opacity=".7"/>
+          <path d="M210 40 L300 300 L120 300 Z" fill="url(#spot)"/>
+          <rect x="196" y="18" width="28" height="26" rx="6" fill="#3c4266"/>
+          <circle cx="210" cy="46" r="17" fill="#ff5c39"/>
+          <circle cx="210" cy="46" r="9" fill="#ffe3da"/>
+          <g transform="translate(210 214)">
+            <ellipse cx="0" cy="42" rx="96" ry="16" fill="#0e1128" opacity=".55"/>
+            <path d="M-84 10 Q-84 -26  0 -26 Q84 -26 84 10 Q84 36 0 36 Q-84 36 -84 10Z" fill="#f6f4ef"/>
+            <path d="M-84 10 Q-84 -4 -52 -6 L-52 20 Q-78 18 -84 10Z" fill="#dfe6e3"/>
+            <path d="M84 10 Q84 -4 52 -6 L52 20 Q78 18 84 10Z" fill="#dfe6e3"/>
+            <path d="M-46 -4 Q0 8 46 -4" stroke="#1f7a6d" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <circle cx="-24" cy="6" r="3.4" fill="#1b1f3b"/>
+            <circle cx="0" cy="10" r="3.4" fill="#1b1f3b"/>
+            <circle cx="24" cy="6" r="3.4" fill="#1b1f3b"/>
+          </g>
+          <g fill="#ffcc4d" opacity=".9">
+            <path d="M86 120l4 10 10 1.4-7.4 6.8 2 10.2-8.6-5.4-8.6 5.4 2-10.2-7.4-6.8L82 130z"/>
+            <path d="M336 96l3 8 8 1-6 5.4 1.6 8-7-4.4-7 4.4 1.6-8-6-5.4 8-1z" transform="scale(.85) translate(66 22)"/>
+          </g>
+          <g stroke="#fff" stroke-opacity=".28" stroke-width="1.4">
+            <circle cx="336" cy="232" r="26" fill="none"/>
+            <circle cx="336" cy="232" r="14" fill="none" stroke-dasharray="3 5"/>
+            <circle cx="74" cy="250" r="20" fill="none" stroke-dasharray="4 6"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+
+      <!-- 主内容 -->
+      <div class="main-col">
+
+        <!-- 1 领域概览 -->
+        <section class="block" id="overview" aria-labelledby="h-overview">
+          <div class="block-head">
+            <span class="kicker">领域概览</span>
+            <h2 id="h-overview">这档“瓜局”到底是什么</h2>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-main">
+              <h3>一场 25 分钟的限时竞猜对局</h3>
+              <p>选手围绕当天预设的 20 条线索下注，猜中得分、猜错扣分，最后按积分排名。线索分三类：人物动向、平台数据、赛程变更。第 6 轮起新增“反水条款”——比赛最后 5 分钟允许改注一次，改注不返还已扣分数。</p>
+              <p>组织方为“瓜桌委员会”，共 5 名执裁，负责线索审核与争议裁定。11月6日晚公示的第 6 轮线索共 20 条，其中 7 条标注了来源平台与时间戳，13 条为内部推测线索，可信度分级会在下文明示。</p>
+            </div>
+            <div class="overview-side">
+              <div class="fact-chip"><b>20</b><span>第 6 轮公示线索条数，11月6日 21:40 发布</span></div>
+              <div class="fact-chip"><b>5</b><span>执裁人数，含 1 名申诉复核人</span></div>
+              <div class="fact-chip"><b>1</b><span>今日唯一一次改注窗口，20:35 开启</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 精选内容推荐（网格卡片） -->
+        <section class="block" id="picks" aria-labelledby="h-picks">
+          <div class="block-head">
+            <span class="kicker">精选推荐</span>
+            <h2 id="h-picks">今日值得先看的六条爆料</h2>
+            <a class="more" href="/#schedule">全部对阵</a>
+          </div>
+          <div class="card-grid">
+            <a class="card" href="/#deep">
+              <img src="https://picsum.photos/seed/guarena-l1/460/300" width="460" height="300" loading="lazy" alt="橙队与蓝队的对阵表被摊开在桌面上">
+              <div class="card-body">
+                <span class="card-meta">对阵解读</span>
+                <h3>橙队 vs 蓝队：改注条款的第一次实战</h3>
+                <p>两队在第 5 轮都吃过最后 5 分钟的亏，这轮谁先把改注名额用掉，可能直接决定胜负。</p>
+              </div>
+            </a>
+            <a class="card" href="/#players">
+              <img src="https://picsum.photos/seed/guarena-l2/460/300" width="460" height="300" loading="lazy" alt="选手糖不甩在镜头前记录线索笔记">
+              <div class="card-body">
+                <span class="card-meta">选手近况</span>
+                <h3>糖不甩连续三轮首注命中，靠的是笔记法</h3>
+                <p>她把线索分成“有平台名”和“纯推测”两栏，只在前一栏下重注，第 4 轮后胜率升到 61%。</p>
+              </div>
+            </a>
+            <a class="card" href="/#timeline">
+              <img src="https://picsum.photos/seed/guarena-l3/460/300" width="460" height="300" loading="lazy" alt="公示板上的时间线标签">
+              <div class="card-body">
+                <span class="card-meta">时间线</span>
+                <h3>名单三次改动：谁在 11月7日 22:10 补位</h3>
+                <p>第 6 轮原定 8 人，因一名选手设备故障退赛，补位流程与签到记录都在时间线里。</p>
+              </div>
+            </a>
+            <a class="card" href="/#faq">
+              <img src="https://picsum.photos/seed/guarena-l4/460/300" width="460" height="300" loading="lazy" alt="规则文本中被圈出的反水条款">
+              <div class="card-body">
+                <span class="card-meta">规则答疑</span>
+                <h3>反水条款到底扣不扣分，答案在 FAQ 第 2 条</h3>
+                <p>改注不返还已扣分数，但猜中后按改注后的赔率结算，两者要分开算。</p>
+              </div>
+            </a>
+            <a class="card" href="/#rank">
+              <img src="https://picsum.photos/seed/guarena-l5/460/300" width="460" height="300" loading="lazy" alt="积分榜上的排名数字">
+              <div class="card-body">
+                <span class="card-meta">积分榜</span>
+                <h3>前五轮总分榜：老白领先 34 分，第二名咬得很紧</h3>
+                <p>榜单一共 14 人，前 8 名直接进今日对局，第 9 名只差 6 分，替补席竞争激烈。</p>
+              </div>
+            </a>
+            <a class="card" href="/#news">
+              <img src="https://picsum.photos/seed/guarena-l6/460/300" width="460" height="300" loading="lazy" alt="社群讨论串截图风格的画面">
+              <div class="card-body">
+                <span class="card-meta">相关资讯</span>
+                <h3>“线索是否该公开来源”在瓜桌社群争了两天</h3>
+                <p>支持方要求全部标注平台，反对方担心来源暴露后线索失效，执裁暂定分层公示。</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- 3 最新更新（紧凑列表） -->
+        <section class="block" id="schedule" aria-labelledby="h-schedule">
+          <div class="block-head">
+            <span class="kicker">最新更新</span>
+            <h2 id="h-schedule">今日赛程与动态</h2>
+            <a class="more" href="/#timeline">完整时间线</a>
+          </div>
+          <ul class="tight-list">
+            <li><time datetime="2026-11-08T08:20">今天 08:20</time><a class="t" href="/#players">蓝队补入“秋刀鱼”，替代设备故障的阿蛮</a><span class="src">公示板</span></li>
+            <li><time datetime="2026-11-08T08:05">今天 08:05</time><a class="t" href="/#rules">执裁确认：第 6 轮起改注窗口提前至 20:35</a><span class="src">瓜桌公告</span></li>
+            <li><time datetime="2026-11-07T22:10">昨天 22:10</time><a class="t" href="/#overview">第 6 轮 20 条线索公示，7 条带来源标注</a><span class="src">线索文档 v3</span></li>
+            <li><time datetime="2026-11-07T19:40">昨天 19:40</time><a class="t" href="/#comments">选手老白在直播里回应对他的“抄线索”质疑</a><span class="src">直播回放</span></li>
+            <li><time datetime="2026-11-06T21:40">11月6日 21:40</time><a class="t" href="/#rank">第五轮结算：老白 214 分居首，糖不甩 180 分第二</a><span class="src">积分表</span></li>
+            <li><time datetime="2026-11-05T16:30">11月5日 16:30</time><a class="t" href="/#news">社群投票：61% 支持线索全部标注来源</a><span class="src">瓜桌社群</span></li>
+            <li><time datetime="2026-11-04T14:00">11月4日 14:00</time><a class="t" href="/#guide">新手引导贴更新，补充“三栏笔记法”示例</a><span class="src">引导贴 v2</span></li>
+          </ul>
+        </section>
+
+        <!-- 4 分类入口（标签索引） -->
+        <section class="block" id="channels" aria-labelledby="h-channels">
+          <div class="block-head">
+            <span class="kicker">分类索引</span>
+            <h2 id="h-channels">按类别找条目</h2>
+          </div>
+          <p class="sub">共 10 个类别，括号内为已归档条目数，点开即按该类别筛选。</p>
+          <div class="tag-index">
+            <a href="/#schedule">今日对阵表<span>28</span></a>
+            <a href="/#players">选手名单与签到<span>14</span></a>
+            <a href="/#rules">赛事规则与条款<span>9</span></a>
+            <a href="/#deep">深度解析<span>12</span></a>
+            <a href="/#guide">新手上手步骤<span>7</span></a>
+            <a href="/#faq">常见问题<span>16</span></a>
+            <a href="/#comments">选手与观众评论<span>43</span></a>
+            <a href="/#rank">积分榜与榜单<span>6</span></a>
+            <a href="/#news">社群资讯<span>21</span></a>
+            <a href="/#rec">相关推荐<span>18</span></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析（全页唯一主体阅读区） -->
+        <section class="block" id="deep" aria-labelledby="h-deep">
+          <div class="block-head">
+            <span class="kicker">深度解析</span>
+            <h2 id="h-deep">反水条款让比赛更好看，也让领先者更保守</h2>
+          </div>
+          <div class="article-prose">
+            <p>第 6 轮开赛前四天，瓜桌委员会把改注窗口从赛末 3 分钟挪到 5 分钟，理由是“给选手留出核对来源的时间”。这条改动的直接后果，是积分领先者在最后阶段更倾向不动，而落后者更愿意赌一把。</p>
+
+            <h3>一、改注前后的两轮数据对比</h3>
+            <p>第 4 轮（3 分钟窗口）全场合计改注 11 次，改注后猜中 4 次，成功率 36%。第 5 轮（同样 3 分钟）改注 9 次，猜中 5 次，成功率 56%。样本小，波动大，不能直接说“改注更准”。真正变化在时间点：第 5 轮有 6 次改注发生在窗口开启后的前 40 秒，选手几乎是在倒计时压力下拍的板。</p>
+            <table class="check-table">
+              <caption class="sr-only">第 4 轮与第 5 轮改注情况对比</caption>
+              <thead><tr><th scope="col">可核对项</th><th scope="col">第 4 轮</th><th scope="col">第 5 轮</th></tr></thead>
+              <tbody>
+                <tr><td>改注窗口时长</td><td>3 分钟</td><td>3 分钟</td></tr>
+                <tr><td>改注次数</td><td>11 次</td><td>9 次</td></tr>
+                <tr><td>改注后猜中</td><td>4 次</td><td>5 次</td></tr>
+                <tr><td>前 40 秒内完成</td><td>5 次</td><td>6 次</td></tr>
+                <tr><td>领先者改注占比</td><td>27%</td><td>22%</td></tr>
+              </tbody>
+            </table>
+
+            <h3>二、执裁口头解释与书面条款不一致</h3>
+            <p>11月5日 20:10 的答疑直播里，执裁“老陶”说改注“不额外扣分”。但条款 v3 第 4 条写的是“改注不返还已扣分数”，两句话听起来差不多，实际差一层：原来那注猜错扣的分不退，改注后的新注再按赔率独立结算。也就是说，一次改注可能叠加两次扣分。这条差异在第 5 轮坑了至少两名选手——小满在赛后复盘中提到，他以为改注等于抵掉前一次。</p>
+
+            <h3>三、支持与反对的说法各自成立在哪里</h3>
+            <div class="split">
+              <div class="cell">
+                <h4>支持改注放宽</h4>
+                <ul>
+                  <li>落后者有翻盘通道，第 5 轮最后两注全部来自第 6、7 名。</li>
+                  <li>倒计时压力下核对来源，比一锤定音更接近真实判断。</li>
+                </ul>
+              </div>
+              <div class="cell">
+                <h4>反对改注放宽</h4>
+                <ul>
+                  <li>领先者几乎不用，等于只给劣势方加分，破坏平衡。</li>
+                  <li>口头与书面不一致，规则理解成本转嫁给选手。</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="verdict">
+              <b>判断：</b>改注条款本身不是问题，问题是“不额外扣分”的口头表述与“不返还已扣分数”的书面条款指向两种算法。只要执裁在 11月8日场次开场前把第 4 条原文念一遍，并注明“改注按新注独立结算”，争议会立刻少一半。这条判断可以被反驳：如果第 6 轮改注次数仍低于 8 次，说明真正的阻力是时间不够，而不是规则难懂。
+            </div>
+
+            <h3>四、把判断拆成可核对的四步</h3>
+            <p>想自己验证上面的结论，不必看二手转述，按下面四步走：</p>
+            <ol>
+              <li>调出第 4、5 两轮的改注记录表，核对次数与猜中数是否与积分表一致。</li>
+              <li>找到条款 v3 第 4 条原文，逐字比对直播里“老陶”的用词。</li>
+              <li>统计两轮改注者的当前排名，看是否集中在第 6 至第 8 名。</li>
+              <li>第 6 轮结束后，再看改注次数是否超过 11 次；超过则时间不是主因。</li>
+            </ol>
+            <p>11月6日 21:40 公示的线索文档 v3 已经附上改注记录表链接，登记在公示板第 2 页。执裁组计划在第 6 轮结束后做一次 10 分钟复盘，届时会公开这次统计。</p>
+          </div>
+        </section>
+
+        <!-- 6 体验指南（编号步骤） -->
+        <section class="block" id="guide" aria-labelledby="h-guide">
+          <div class="block-head">
+            <span class="kicker">体验指南</span>
+            <h2 id="h-guide">第一次看这档比赛，按四步走</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>先看规则第 4 条和第 7 条</h3>
+              <p>第 4 条讲改注怎么算分，第 7 条讲线索失效后如何补判。两条读懂，九成争议能自己解释。</p>
+            </li>
+            <li>
+              <h3>用“三栏笔记法”记线索</h3>
+              <p>分三栏：带平台名、带时间戳、纯推测。前两栏可以下重注，第三栏只当参考。糖不甩第 4 轮起用这套方法，命中率从 42% 升到 61%。</p>
+            </li>
+            <li>
+              <h3>开赛前 10 分钟看签到表</h3>
+              <p>签到表在公示板首页，迟到 5 分钟按弃权处理。11月8日 08:20 的补位就是因为阿蛮设备故障，签到未完成。</p>
+            </li>
+            <li>
+              <h3>赛后回查结算页，不看二手截图</h3>
+              <p>结算页会标出每注的赔率与扣分。社群截图常截掉扣分栏，容易误读。第 5 轮就有一条被转了 300 多次的错误截图。</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="block" id="faq" aria-labelledby="h-faq">
+          <div class="block-head">
+            <span class="kicker">常见问题</span>
+            <h2 id="h-faq">规则、线索与结算的常见疑问</h2>
+          </div>
+          <details class="faq" open>
+            <summary>线索的可信度分级怎么看？</summary>
+            <div class="ans"><p>线索分三级：A 级带平台名和具体时间戳，可在原平台核对；B 级只带时间，来源方要求匿名；C 级是纯推测，执裁也不保证。11月6日公示的 20 条里，A 级 7 条、B 级 5 条、C 级 8 条。押注按级别给不同赔率。</p></div>
+          </details>
+          <details class="faq">
+            <summary>改注到底扣不扣分？</summary>
+            <div class="ans"><p>改注本身不额外扣分，但原来那一注猜错的分数不退，新注按新的赔率独立结算。条款 v3 第 4 条的原文是“改注不返还已扣分数”。11月5日直播里执裁说“不额外扣分”，指的是不叠加罚分，两者并不冲突，容易被听混。</p></div>
+          </details>
+          <details class="faq">
+            <summary>选手迟到多久算弃权？</summary>
+            <div class="ans"><p>签到截止为开赛前 10 分钟，迟到超过 5 分钟即按弃权处理，名额由替补席按积分顺位补入。11月7日 22:10 的名单变动就是按这条执行的，秋刀鱼以替补第 1 顺位补位。</p></div>
+          </details>
+          <details class="faq">
+            <summary>历史轮次的结算表能回查吗？</summary>
+            <div class="ans"><p>能。前 5 轮的结算表在积分榜页面按轮次归档，每张表包含注项、赔率、扣分三列。回查时建议核对扣分列，社群流传的截图常把这一列裁掉。</p></div>
+          </details>
+          <details class="faq">
+            <summary>单场 25 分钟不够用怎么办？</summary>
+            <div class="ans"><p>第 6 轮起启用“延时提示”：剩余 5 分钟时屏幕出现黄色提示条，剩余 1 分钟转红。第 5 轮有 3 名选手在无提示情况下超时，超时下注按无效处理。</p></div>
+          </details>
+        </section>
+
+        <!-- 8 用户评论 -->
+        <section class="block" id="comments" aria-labelledby="h-comments">
+          <div class="block-head">
+            <span class="kicker">用户评论</span>
+            <h2 id="h-comments">选手与观众怎么说</h2>
+          </div>
+
+          <div class="comment">
+            <div class="avatar" aria-hidden="true">白</div>
+            <div class="body">
+              <div class="who">老白 <span>第 5 轮第 1 名 · 11月7日 19:40 直播</span></div>
+              <p>说我抄糖不甩的线索，没有依据。第 5 轮我的第一注押在“B 级第 3 条”，她押的是“A 级第 2 条”，两条根本不是一个方向。真要抄，我不会抄个输的。</p>
+              <p class="re">回复 3 条 · 该条已被执裁组标记为“待核实”</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="avatar c2" aria-hidden="true">秋</div>
+            <div class="body">
+              <div class="who">秋刀鱼 <span>今日替补补位 · 11月8日 08:26</span></div>
+              <p>刚签完到，手还在抖。第 5 轮我排第 9，差 6 分没进，这次补位算是捡的。橙队那边节奏快，我打算前 10 分钟只看不下注。</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="avatar c3" aria-hidden="true">满</div>
+            <div class="body">
+              <div class="who">小满 <span>第 5 轮第 6 名 · 11月7日 21:05</span></div>
+              <p>第 4 条我到现在还是觉得别扭。口头上说不扣，实际改了注扣两次，这种理解成本不该让选手扛。要么改条款原文，要么直播时念一遍，别只说半句。</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="avatar c4" aria-hidden="true">观</div>
+            <div class="body">
+              <div class="who">风筝线断了 <span>观众 · 11月7日 23:12</span></div>
+              <p>改注窗口挪到 5 分钟以后，最后那几分钟确实好看多了。第 5 轮倒数第二注改中那一刻，弹幕直接刷屏。至于公平不公平，我不是选手，说不上来。</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="avatar" aria-hidden="true">糖</div>
+            <div class="body">
+              <div class="who">糖不甩 <span>第 5 轮第 2 名 · 11月7日 22:48</span></div>
+              <p>三栏笔记法没什么秘密，就是逼自己把“有来源”和“没来源”分开。第 4 轮我押了 6 注 C 级，中了 2 注，亏了 14 分，从那以后 C 级只当参考。</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <div class="avatar c2" aria-hidden="true">陶</div>
+            <div class="body">
+              <div class="who">老陶 <span>执裁 · 11月5日 20:10 答疑直播</span></div>
+              <p>直播里说“不额外扣分”，语境是回答“会不会叠加罚分”，不是解释结算方式。话说得不够清楚，认。第 6 轮开场前会把第 4 条原文念一遍。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9 相关资讯 -->
+        <section class="block" id="news" aria-labelledby="h-news">
+          <div class="block-head">
+            <span class="kicker">相关资讯</span>
+            <h2 id="h-news">社群与公示板近况</h2>
+          </div>
+          <ul class="tight-list">
+            <li><time datetime="2026-11-07">11月7日</time><a class="t" href="/#comments">“线索是否该全部公开来源”投票结束，61% 支持全公开</a><span class="src">瓜桌社群</span></li>
+            <li><time datetime="2026-11-07">11月7日</time><a class="t" href="/#deep">两位选手质疑第 4 条表述，执裁承诺开场前复述原文</a><span class="src">公示板第 2 页</span></li>
+            <li><time datetime="2026-11-06">11月6日</time><a class="t" href="/#schedule">第 6 轮 20 条线索公示，A 级 7 条、B 级 5 条、C 级 8 条</a><span class="src">线索文档 v3</span></li>
+            <li><time datetime="2026-11-05">11月5日</time><a class="t" href="/#rank">第五轮赛后复盘直播，观看峰值 2.3 万</a><span class="src">回放数据</span></li>
+            <li><time datetime="2026-11-03">11月3日</time><a class="t" href="/#guide">引导贴补充“三栏笔记法”图文示例</a><span class="src">引导贴 v2</span></li>
+          </ul>
+        </section>
+
+        <!-- 10 相关推荐（标签索引） -->
+        <section class="block" id="rec" aria-labelledby="h-rec">
+          <div class="block-head">
+            <span class="kicker">相关推荐</span>
+            <h2 id="h-rec">你可能还想查</h2>
+          </div>
+          <div class="tag-index">
+            <a href="/#deep">改注窗口怎么算分</a>
+            <a href="/#players">今日 8 人名单签到表</a>
+            <a href="/#rank">前五轮积分完整榜</a>
+            <a href="/#faq">线索 A 级 B 级 C 级区别</a>
+            <a href="/#schedule">橙队 vs 蓝队历史交手</a>
+            <a href="/#comments">老白抄线索争议原话</a>
+            <a href="/#guide">三栏笔记法示例</a>
+            <a href="/#timeline">11月7日名单补位记录</a>
+          </div>
+        </section>
+
+        <!-- 11 排行榜 -->
+        <section class="block" id="rank" aria-labelledby="h-rank">
+          <div class="block-head">
+            <span class="kicker">排行榜</span>
+            <h2 id="h-rank">前五轮总积分榜（前 8 名进今日对局）</h2>
+            <a class="more" href="/#players">看选手资料</a>
+          </div>
+          <ol class="rank-list">
+            <li><span class="nm">老白</span><span class="sc">214 分</span></li>
+            <li><span class="nm">糖不甩</span><span class="sc">180 分</span></li>
+            <li><span class="nm">小满</span><span class="sc">168 分</span></li>
+            <li><span class="nm">阿蛮</span><span class="sc">155 分 · 今日退赛</span></li>
+            <li><span class="nm">北岛汽水</span><span class="sc">141 分</span></li>
+            <li><span class="nm">六斤</span><span class="sc">133 分</span></li>
+            <li><span class="nm">老陶不在场</span><span class="sc">126 分</span></li>
+            <li><span class="nm">井盖上跳舞</span><span class="sc">119 分</span></li>
+            <li><span class="nm">秋刀鱼</span><span class="sc">113 分 · 今日补位</span></li>
+          </ol>
+          <p class="sub">数据来源：第 5 轮结算表，11月6日 21:40 归档。第 8 名与第 9 名相差 6 分，补位后顺位按原榜执行。</p>
+        </section>
+
+        <!-- 12 补充板块：时间线 -->
+        <section class="block" id="timeline" aria-labelledby="h-timeline">
+          <div class="block-head">
+            <span class="kicker">时间线</span>
+            <h2 id="h-timeline">第 6 轮从公示到开赛的四天</h2>
+          </div>
+          <ul class="timeline">
+            <li><time datetime="2026-11-04">11月4日 14:00</time>引导贴 v2 上线，新增三栏笔记法图文示例，当天阅读 4800 次。</li>
+            <li><time datetime="2026-11-05">11月5日 20:10</time>执裁答疑直播，老陶回应改注问题，原话“不额外扣分”被剪成 12 秒片段传播。</li>
+            <li><time datetime="2026-11-06">11月6日 21:40</time>第 6 轮 20 条线索公示，A 级 7 条、B 级 5 条、C 级 8 条，附改注记录表链接。</li>
+            <li><time datetime="2026-11-07">11月7日 19:40</time>老白直播回应“抄线索”质疑，执裁组当晚标记为“待核实”。</li>
+            <li><time datetime="2026-11-07">11月7日 22:10</time>阿蛮设备故障退赛，秋刀鱼按替补第 1 顺位补位。</li>
+            <li><time datetime="2026-11-08">11月8日 08:05</time>执裁确认改注窗口提前至 20:35，开场前将复述第 4 条原文。</li>
+            <li><time datetime="2026-11-08">今天 09:00</time>橙队 vs 蓝队开赛，单场 25 分钟，改注窗口 20:35 开启。</li>
+          </ul>
+        </section>
+
+        <!-- 13 选手名单（补充） -->
+        <section class="block" id="players" aria-labelledby="h-players">
+          <div class="block-head">
+            <span class="kicker">选手名单</span>
+            <h2 id="h-players">今日 8 人分组与签到状态</h2>
+          </div>
+          <div class="compare">
+            <div class="a">
+              <h3>橙队</h3>
+              <ul>
+                <li>老白 · 已签到 08:12</li>
+                <li>小满 · 已签到 08:18</li>
+                <li>北岛汽水 · 已签到 08:21</li>
+                <li>井盖上跳舞 · 已签到 08:29</li>
+              </ul>
+            </div>
+            <div class="b">
+              <h3>蓝队</h3>
+              <ul>
+                <li>糖不甩 · 已签到 08:09</li>
+                <li>六斤 · 已签到 08:16</li>
+                <li>老陶不在场 · 已签到 08:24</li>
+                <li>秋刀鱼 · 已签到 08:26（补位）</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 14 引语卡 -->
+        <section class="block" aria-labelledby="h-quote">
+          <div class="block-head">
+            <span class="kicker">引语</span>
+            <h2 id="h-quote">一句能当对照用的赛后原话</h2>
+          </div>
+          <blockquote class="quote-card">
+            <p>“我不怕 C 级线索，我怕的是把 C 级当 A 级用。第 4 轮我就是这么亏的 14 分，之后再没犯过。”</p>
+            <footer>—— 糖不甩，第 5 轮赛后复盘，11月7日 22:48</footer>
+          </blockquote>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side-rail" aria-label="辅助导航">
+        <div class="side-card">
+          <h2>频道导航</h2>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#picks">精选推荐</a></li>
+            <li><a href="/#schedule">最新更新</a></li>
+            <li><a href="/#channels">分类索引</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#rank">积分榜</a></li>
+            <li><a href="/#timeline">时间线</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h2>今日三个数字</h2>
+          <p class="side-note"><strong>20</strong> 条公示线索｜<strong>8</strong> 名参赛选手｜<strong>20:35</strong> 改注窗口开启时刻。开赛时间 09:00，签到截止 08:50。</p>
+        </div>
+        <div class="side-card">
+          <h2>热门查找词</h2>
+          <div class="side-tags">
+            <a href="/#deep">改注条款</a>
+            <a href="/#faq">可信度分级</a>
+            <a href="/#comments">抄线索争议</a>
+            <a href="/#rank">前五轮积分</a>
+            <a href="/#players">今日签到表</a>
+            <a href="/#guide">三栏笔记法</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#ffcc4d"/>
+            <path d="M32 11l5.6 13 14.4 1.7-10.6 9.5 2.9 14.5L32 42.5 19.7 49.7l2.9-14.5L12 25.7 26.4 24z" fill="#1b1f3b"/>
+          </svg>
+          r星每日必吃大瓜今日大赛
+        </div>
+        <p class="footer-desc">每天 09:00 开一场的限时线索竞猜，8 人分两组对局，单场 25 分钟。公示板、线索文档、结算表与积分榜按轮次归档，可逐条回查。</p>
+      </div>
+      <div>
+        <h2>赛事</h2>
+        <ul>
+          <li><a href="/#schedule">今日赛程</a></li>
+          <li><a href="/#players">选手名单</a></li>
+          <li><a href="/#rank">积分榜</a></li>
+          <li><a href="/#timeline">时间线</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>规则与解读</h2>
+        <ul>
+          <li><a href="/#rules">赛事规则</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>其他</h2>
+        <ul>
+          <li><a href="/#picks">精选推荐</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>页面内容含示例条目：选手积分、签到时间、社群投票数据均为演示用途，非真实赛事记录。更新时间对应正文 11月8日 08:20 的补位公示与 08:05 的规则确认。</span>
+      <span>© 2026 r星每日必吃大瓜今日大赛</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn=document.getElementById('menuBtn');
+  var navList=document.getElementById('navList');
+  if(menuBtn&&navList){
+    menuBtn.addEventListener('click',function(){
+      var open=navList.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    navList.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.matchMedia('(max-width:980px)').matches){
+        navList.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 本地查找 */
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('q');
+  var status=document.getElementById('searchStatus');
+  if(form&&input&&status){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var kw=input.value.trim().toLowerCase();
+      if(!kw){status.textContent='请输入关键词';status.classList.add('empty');return;}
+      var nodes=document.querySelectorAll('.main-col h2, .main-col h3, .main-col .tight-list li, .main-col .rank-list li, .main-col .tag-index a, .main-col summary, .main-col .comment');
+      var hit=null;
+      for(var i=0;i<nodes.length;i++){
+        if(nodes[i].textContent.toLowerCase().indexOf(kw)>-1){hit=nodes[i];break;}
+      }
+      if(hit){
+        status.textContent='找到结果';
+        status.classList.remove('empty');
+        var target=hit.closest('section')||hit;
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+      }else{
+        status.textContent='没有找到“'+input.value.trim()+'”，试试“改注”“积分”“签到”';
+        status.classList.add('empty');
+      }
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(!toTop)return;
+    if(window.scrollY>560){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  if(toTop){
+    toTop.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  }
+
+  /* 滚动高亮侧栏 */
+  var sections=Array.prototype.slice.call(document.querySelectorAll('.main-col section[id]'));
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  function setActive(){
+    var pos=window.scrollY+120;
+    var current=sections[0]?sections[0].id:null;
+    sections.forEach(function(s){
+      if(s.offsetTop<=pos){current=s.id;}
+    });
+    sideLinks.forEach(function(a){
+      var target=a.getAttribute('href').replace('/#','');
+      if(target===current){a.classList.add('active');}
+      else{a.classList.remove('active');}
+    });
+    /* 顶部导航高亮 */
+    var navLinks=document.querySelectorAll('.nav-list a');
+    navLinks.forEach(function(a){
+      var target=a.getAttribute('href').replace('/#','');
+      if(target===current){a.classList.add('active');}
+      else{a.classList.remove('active');}
+    });
+  }
+  window.addEventListener('scroll',setActive,{passive:true});
+  window.addEventListener('resize',setActive);
+  setActive();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"r星每日必吃大瓜今日大赛",
+  "description":"每日更新的限时线索竞猜栏目，汇总今日对阵、选手名单、积分榜、规则说明与场外爆料。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"线索的可信度分级怎么看？",
+      "acceptedAnswer":{"@type":"Answer","text":"线索分三级：A 级带平台名和具体时间戳，可在原平台核对；B 级只带时间，来源方要求匿名；C 级是纯推测。11月6日公示的 20 条里，A 级 7 条、B 级 5 条、C 级 8 条。"}
+    },
+    {
+      "@type":"Question",
+      "name":"改注到底扣不扣分？",
+      "acceptedAnswer":{"@type":"Answer","text":"改注本身不额外扣分，但原来那一注猜错的分数不退，新注按新的赔率独立结算。条款 v3 第 4 条原文为“改注不返还已扣分数”。"}
+    },
+    {
+      "@type":"Question",
+      "name":"选手迟到多久算弃权？",
+      "acceptedAnswer":{"@type":"Answer","text":"签到截止为开赛前 10 分钟，迟到超过 5 分钟即按弃权处理，名额由替补席按积分顺位补入。"}
+    },
+    {
+      "@type":"Question",
+      "name":"历史轮次的结算表能回查吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"能。前 5 轮的结算表在积分榜页面按轮次归档，每张表包含注项、赔率、扣分三列。回查时建议核对扣分列。"}
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
